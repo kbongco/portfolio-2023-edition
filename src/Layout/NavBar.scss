@@ -1,0 +1,15 @@
+.chbi-nav-container{
+  font-size: 2rem;
+  margin-top: 24px;
+
+  .chbi-nav-links {
+    display: flex;
+    justify-content: end;
+
+    .chbi-links {
+      color: #B3EFFF;
+      padding-right: 24px;
+      text-decoration: none;
+    }
+  }
+}
