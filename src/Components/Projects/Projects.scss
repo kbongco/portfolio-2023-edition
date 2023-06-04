@@ -1,0 +1,18 @@
+.chbi-projects-container {
+  color: #B3EFFF;
+  .chbi-projects-header {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+  .chbi-projects-container-details {
+    display: grid;
+grid-template-columns: repeat(2, 1.25fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+.chbi-lifting-data {
+  height: 32vh;
+}
+  }
+}
