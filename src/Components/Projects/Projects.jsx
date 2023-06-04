@@ -1,7 +1,7 @@
 import './Projects.scss'
 export default function Projects() {
   return (
-    <div className='chbi-projects-container'>
+    <div className='chbi-projects-container' id='projects'>
       <h4 className="chbi-projects-header">Projects and Cool things</h4>
       <p>Here are some projects I've worked on in the past and some of the cool stuff I am currently working and playing around with!</p>
       <div className='chbi-projects-container-details'>

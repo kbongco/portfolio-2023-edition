@@ -1,7 +1,7 @@
 import './About.scss'
 export default function About() {
   return (
-    <div className='chbi-about-section'>
+    <div className='chbi-about-section' id='home'>
       <h1 className='chbi-greeting-about'>Hello, there! 👀</h1>
       <div className='chbi-greeting-about-container'>
         <p className='chbi-greeting-intro'>My name is Kathleen and I am a UX Engineer that loves creating new applications that solve creative problems while thinking about design and accessibility for users! </p>
