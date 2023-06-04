@@ -12,4 +12,13 @@
       text-decoration: none;
     }
   }
+  
+  @media screen and (max-width: 768px) {
+    .chbi-nav-container {
+      .chbi-nav-links {
+      display: flex;
+      justify-content: start;
+      }
+    }
+  }
 }

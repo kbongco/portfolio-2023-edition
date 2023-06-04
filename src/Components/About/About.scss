@@ -1,0 +1,30 @@
+// .chbi-greeting-about {
+//   color: #B3EFFF;
+// }
+.chbi-about-section {
+  color: #B3EFFF;
+
+  .chbi-greeting-about {
+    font-size: 6rem;
+  }
+
+  .chbi-greeting-about-container{
+    .chbi-greeting-intro {
+      font-size: 48px;
+    }
+  }
+
+  .chbi-button-container {
+    display: flex;
+
+    .chbi-button-linkedin, .chbi-button-github {
+      background-color: #00CFFF;
+      height: 60px;
+      width: 250px;
+      border-radius: 16px;
+      font-size: 2rem;
+      margin-right: 16px;
+      border: none;
+    }
+  }
+}
