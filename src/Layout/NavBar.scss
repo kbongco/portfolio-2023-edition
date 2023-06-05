@@ -1,24 +1,24 @@
-.chbi-nav-container{
-  font-size: 2rem;
+.chbi-nav-container {
+  font-size: 1.25rem;
   margin-top: 24px;
 
   .chbi-nav-links {
     display: flex;
-    justify-content: end;
+    justify-content: start;
 
     .chbi-links {
       color: #B3EFFF;
-      padding-right: 24px;
+      padding-right: 8px;
       text-decoration: none;
     }
   }
-  
-  @media screen and (max-width: 768px) {
-    .chbi-nav-container {
-      .chbi-nav-links {
-      display: flex;
-      justify-content: start;
-      }
-    }
+}
+
+@media screen and (min-width: 1020px) {
+  .chbi-nav-container {
+  .chbi-nav-links {
+    display:flex;
+    justify-content: end;
   }
+}
 }

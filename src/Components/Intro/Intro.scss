@@ -1,5 +1,19 @@
 .chbi-intro-container {
   color: #B3EFFF;
+  margin-top: 32px;
+
+  .chbi-intro-text {
+    font-size: 2rem;
+  }
+
+  .chbi-intro-information {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chbi-intro-container {
+  color: #B3EFFF;
   margin-top: 64px;
   display: grid;
   grid-template-columns: 0.3fr 1fr;
@@ -14,4 +28,5 @@
   .chbi-intro-information {
     font-size: 28px;
   }
+}
 }

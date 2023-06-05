@@ -6,12 +6,9 @@ export default function Skills() {
       <h3 className='chbi-skills-title'>Some tools of the trade 🛡</h3>
       <p className='chbi-skills-paragraph'>It's very dangerous to go alone! Take these! As someone who's gone the self taught route and the coding bootcamp route, I've picked up quite a bit of skills. So these are some things I've learned, used on the job and am currently learning.</p>
       <div className='chbi-skills-list-container'>
-        <p className='chbi-skills-grid-title'>Languages</p>
-        <p className='chbi-skills-grid-title'>Frameworks/Libraries</p>
-        <p className='chbi-skills-grid-title'>Tools</p>
-        <p className='chbi-skills-grid-title'>Currently learning</p>
-        <div className='chbi-skills-grid-content'>
-          <p>HTML</p>
+      <p className='chbi-skills-grid-title'>Languages</p>
+        <div className='chbi-skills-language-container'>
+        <p>HTML</p>
           <p>CSS/SCSS</p>
           <p>Javascript</p>
           <p>Typescript</p>
@@ -19,14 +16,18 @@ export default function Skills() {
           <p>Ruby</p>
           <p>SQL/PSQL</p>
         </div>
+        <p className='chbi-skills-grid-title'>
+          Frameworks/Libraries
+        </p>
         <div className='chbi-skills-grid-libraries-content'>
-          <p>React.js</p>
+        <p>React.js</p>
           <p>Angular</p>
           <p>Flask</p>
           <p>Rails</p>
           <p>RxJS</p>
           <p>Redux</p>
         </div>
+        <p className='chbi-skills-grid-title'>Tools</p>
         <div className='chbi-skills-grid-tools-content'>
         <p>VSCode</p>
           <p>Git/Github</p>
@@ -35,8 +36,9 @@ export default function Skills() {
           <p>Postman</p>
           <p>Linux</p>
         </div>
+        <p className='chbi-skills-grid-title'>Currently learning</p>
         <div className='chbi-skills-grid-currently-learning-content'>
-          <p>Next.js</p>
+        <p>Next.js</p>
           <p>GraphQL</p>
           <p>Improving my other listed skills!</p>
         </div>

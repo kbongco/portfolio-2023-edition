@@ -5,7 +5,7 @@ export default function Projects() {
       <h4 className="chbi-projects-header">Projects and Cool things</h4>
       <p>Here are some projects I've worked on in the past and some of the cool stuff I am currently working and playing around with!</p>
       <div className='chbi-projects-container-details'>
-        <img className='chbi-portfolio-site'src="https://i.ibb.co/7QCdtM2/portfolio.png"/>
+        <img className='chbi-portfolio-site chbi-portfolio-site-mobile 'src="https://i.ibb.co/7QCdtM2/portfolio.png"/>
         <p>Portfolio Site<br />
         Fun fact: this is the sixth rendition of my portfolio site. I decided to keep this very simple and not flashy. My portfolio site is a constant work in progress and I'm proud to say that this will be the best version yet! 
 Built using: 
