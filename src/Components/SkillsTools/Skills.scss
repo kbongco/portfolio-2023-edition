@@ -1,13 +1,40 @@
 .chbi-skills-container {
   .chbi-skills-title {
-    font-size: 48px;
+    font-size: 1.5rem;
     color: #b3efff;
     margin-bottom: 8px;
   }
 
   .chbi-skills-paragraph {
     color: #b3efff;
-    font-size: 32px;
+    font-size: 1rem;
+  }
+
+  .chbi-skills-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(4, 3fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 0px;
+    color: #FFFFFF;
+
+    .chbi-skills-grid-title {
+      font-weight:800;
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .chbi-skills-container {
+  .chbi-skills-title {
+    font-size: 3rem;
+    color: #b3efff;
+    margin-bottom: 8px;
+  }
+
+  .chbi-skills-paragraph {
+    color: #b3efff;
+    font-size: 2rem;
   }
 
   .chbi-skills-list-container {
@@ -21,15 +48,6 @@
     .chbi-skills-grid-title {
       font-weight:800;
     }
-
-    .chbi-skills-grid-content {
-      grid-area: 2 / 1 / 3 / 2;
-      font-weight: none;
-    }
-
-    .chbi-skills-grid-libraries-content {
-      grid-area: 2 / 2 / 3 / 3; 
-      font-weight: none;
-    }
   }
+}
 }

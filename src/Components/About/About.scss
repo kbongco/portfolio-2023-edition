@@ -3,17 +3,18 @@
   color: #B3EFFF;
 
   .chbi-greeting-about {
-    font-size: 6rem;
+    font-size: 2.5rem;
   }
 
-  .chbi-greeting-about-container{
+  .chbi-greeting-about-container {
     .chbi-greeting-intro {
-      font-size: 48px;
+      font-size: 1.25rem;
     }
   }
 
   .chbi-button-container {
     display: flex;
+    flex-direction: column;
 
     .chbi-button-linkedin, .chbi-button-github {
       background-color: #00CFFF;
@@ -21,8 +22,39 @@
       width: 250px;
       border-radius: 16px;
       font-size: 2rem;
-      margin-right: 16px;
+      margin-top: 16px;
       border: none;
+  }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chbi-about-section {
+    .chbi-greeting-about {
+      font-size: 6rem;
+    }
+
+    .chbi-greeting-about-container {
+      .chbi-greeting-intro {
+        font-size: 3rem;
+      }
+    }
+
+    .chbi-button-container {
+      display: flex;
+      flex-direction: row;
+
+      .chbi-button-linkedin, .chbi-button-github {
+        background-color: #00CFFF;
+        height: 60px;
+        width: 250px;
+        border-radius: 16px;
+        font-size: 2rem;
+        margin-top: 16px;
+        margin-right: 16px;
+        border: none;
+    }
     }
   }
+  
 }
