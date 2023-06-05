@@ -2,7 +2,7 @@ import './Intro.scss'
 
 export default function Intro() {
   return (
-    <div className='chbi-intro-container'>
+    <div className='chbi-intro-container' id='about'>
       <h2 className='chbi-intro-text'>About</h2>
       <div className='chbi-intro-information'>
         <p>I am a former food scientist turned software engineer. While working in the food industry I discovered my enjoyment of coding and developing new applications while I was in between contract roles working in the food industry. While I was working in the food industry I often would realize that a lot of the methods they would use for tracking things could be automated in some way or form. After my last role in the food industry, the COVID-19 pandemic came and I was at a cross-roads, to which I decided on career changing into Software Engineering.</p>
