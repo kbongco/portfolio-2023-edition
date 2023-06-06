@@ -15,6 +15,7 @@ export default function Skills() {
           <p>Python</p>
           <p>Ruby</p>
           <p>SQL/PSQL</p>
+          <p>Node.js</p>
         </div>
         <p className='chbi-skills-grid-title'>
           Frameworks/Libraries
@@ -26,6 +27,8 @@ export default function Skills() {
           <p>Rails</p>
           <p>RxJS</p>
           <p>Redux</p>
+          <p>Express</p>
+          <p>Mongoose</p>
         </div>
         <p className='chbi-skills-grid-title'>Tools</p>
         <div className='chbi-skills-grid-tools-content'>
