@@ -8,42 +8,50 @@ export default function Skills() {
       <div className='chbi-skills-list-container'>
       <p className='chbi-skills-grid-title'>Languages</p>
         <div className='chbi-skills-language-container'>
-        <p>HTML</p>
-          <p>CSS/SCSS</p>
-          <p>Javascript</p>
-          <p>Typescript</p>
-          <p>Python</p>
-          <p>Ruby</p>
-          <p>SQL/PSQL</p>
-          <p>Node.js</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/SCSS</li>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>SQL/PSQL</li>
+            <li>Node.js</li>
+          </ul>
         </div>
         <p className='chbi-skills-grid-title'>
           Frameworks/Libraries
         </p>
         <div className='chbi-skills-grid-libraries-content'>
-        <p>React.js</p>
-          <p>Angular</p>
-          <p>Flask</p>
-          <p>Rails</p>
-          <p>RxJS</p>
-          <p>Redux</p>
-          <p>Express</p>
-          <p>Mongoose</p>
+          <ul>
+            <li>React.js</li>
+            <li>Angular</li>
+            <li>Flask</li>
+            <li>Rails</li>
+            <li>RxJS</li>
+            <li>Redux</li>
+            <li>Express</li>
+            <li>Mongoose</li>
+          </ul>
         </div>
         <p className='chbi-skills-grid-title'>Tools</p>
         <div className='chbi-skills-grid-tools-content'>
-        <p>VSCode</p>
-          <p>Git/Github</p>
-          <p>Jira</p>
-          <p>Figma</p>
-          <p>Postman</p>
-          <p>Linux</p>
+          <ul>
+            <li>VSCode</li>
+            <li>Git/Github</li>
+            <li>Jira</li>
+            <li>Figma</li>
+            <li>Postman</li>
+            <li>Linux</li>
+          </ul>
         </div>
         <p className='chbi-skills-grid-title'>Currently learning</p>
         <div className='chbi-skills-grid-currently-learning-content'>
-        <p>Next.js</p>
-          <p>GraphQL</p>
-          <p>Improving my other listed skills!</p>
+          <ul>
+            <li>Next.js</li>
+            <li>GraphQL</li>
+            <li>Improving my other listed skills!</li>
+          </ul>
         </div>
       </div>
     </div>
