@@ -1,4 +1,5 @@
 import './Skills.scss'
+import { Languages, frameworksAndLibraries, tools, currentLearning } from '../../constants'
 
 export default function Skills() {
   return ( 
@@ -9,14 +10,7 @@ export default function Skills() {
       <p className='chbi-skills-grid-title'>Languages</p>
         <div className='chbi-skills-language-container'>
           <ul>
-            <li>HTML</li>
-            <li>CSS/SCSS</li>
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>SQL/PSQL</li>
-            <li>Node.js</li>
+            {Languages.map((lang) => <li>{lang}</li>)}
           </ul>
         </div>
         <p className='chbi-skills-grid-title'>
@@ -24,33 +18,20 @@ export default function Skills() {
         </p>
         <div className='chbi-skills-grid-libraries-content'>
           <ul>
-            <li>React.js</li>
-            <li>Angular</li>
-            <li>Flask</li>
-            <li>Rails</li>
-            <li>RxJS</li>
-            <li>Redux</li>
-            <li>Express</li>
-            <li>Mongoose</li>
+            {frameworksAndLibraries.map((frame) => 
+              <li>{frame}</li>)}
           </ul>
         </div>
         <p className='chbi-skills-grid-title'>Tools</p>
         <div className='chbi-skills-grid-tools-content'>
           <ul>
-            <li>VSCode</li>
-            <li>Git/Github</li>
-            <li>Jira</li>
-            <li>Figma</li>
-            <li>Postman</li>
-            <li>Linux</li>
+            {tools.map((tool) => <li>{tool}</li>)}
           </ul>
         </div>
         <p className='chbi-skills-grid-title'>Currently learning</p>
         <div className='chbi-skills-grid-currently-learning-content'>
           <ul>
-            <li>Next.js</li>
-            <li>GraphQL</li>
-            <li>Improving my other listed skills!</li>
+            {currentLearning.map((current) => <li>{current}</li>)}
           </ul>
         </div>
       </div>
