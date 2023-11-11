@@ -1,20 +1,20 @@
 import "./Projects.scss";
 import samples from "../../assets/samples.png";
-import weebjams from '../../assets/weebjams.png'
+import weebjams from "../../assets/weebjams.png";
+import { useTranslation } from "react-i18next";
+
 export default function Projects() {
+  const { t } = useTranslation();
   return (
     <div className="chbi-projects-container" id="projects">
-      <h4 className="chbi-projects-header">Projects and Cool things</h4>
-      <p>
-        Here are some projects I've worked on in the past and some of the cool
-        stuff I am currently working and playing around with! This is just a
-        small set of projects I have worked on, if you would like to see some
-        source code check out my{" "}
+      <h4 className="chbi-projects-header">{t("projects-cool")}</h4>
+      <p>{t('projects-description')}{" "}
         <a className="chbi-github-link" href="http://github.com/kbongco">
-          Github
+          {t('github')}
         </a>
         !{" "}
       </p>
+      {/* For Projects section use AirTable and do an API call with it */}
       <div className="chbi-projects-container-details">
         <img
           className="chbi-portfolio-site chbi-portfolio-site-mobile "
@@ -83,13 +83,14 @@ export default function Projects() {
             Github Link
           </a>{" "}
           | Deployed Site
-          <br />
-          A project utilizing Spotify's API for search and combines with the Jikan API the unofficial
-          My Anime List API which allows users to search for Anime Openings and Closings and see if they
-          are licensed and are able to be listened to on Spotify. This project I used Vite instead of create
-          react app to start up the project, as well as utilizing some various data structures to help with the
-          performance of the project. 
-          FrontEnd: React.js, Typescript, Styled Components, Material UI,  Vite, Figma used for prototyping and design
+          <br />A project utilizing Spotify's API for search and combines with
+          the Jikan API the unofficial My Anime List API which allows users to
+          search for Anime Openings and Closings and see if they are licensed
+          and are able to be listened to on Spotify. This project I used Vite
+          instead of create react app to start up the project, as well as
+          utilizing some various data structures to help with the performance of
+          the project. FrontEnd: React.js, Typescript, Styled Components,
+          Material UI, Vite, Figma used for prototyping and design
         </p>
       </div>
     </div>

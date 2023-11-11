@@ -1,14 +1,17 @@
 import './About.scss'
+import { useTranslation } from "react-i18next";
+
 export default function About() {
+  const { t } = useTranslation();
   return (
     <summary className='chbi-about-section' id='home'>
-      <h1 className='chbi-greeting-about'>Hello, there! 👀</h1>
+      <h1 className='chbi-greeting-about'>{t('hello-there')}</h1>
       <div className='chbi-greeting-about-container'>
-        <p className='chbi-greeting-intro'>My name is Kathleen and I am a Front end engineer with experience creating responsive, user-friendly, and modern UIs with modern Javascript frameworks! </p>
+        <p className='chbi-greeting-intro'>{t('introduction')} </p>
       </div>
       <div className='chbi-button-container'>
-        <a href='https://www.linkedin.com/in/kathleen-bongco-11843197/'><button className='chbi-button-linkedin'>LinkedIn</button></a>
-        <a href='http://github.com/kbongco'><button className='chbi-button-github'>Github</button></a>
+        <a href='https://www.linkedin.com/in/kathleen-bongco-11843197/'><button className='chbi-button-linkedin'>{t('linkedIn')}</button></a>
+        <a href='http://github.com/kbongco'><button className='chbi-button-github'>{t('github')}</button></a>
       </div>
     </summary>
   )
