@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Portfolio Website 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+[Portfolio Website](#PortfolioWebsite)
+- [Portfolio Website](#portfolio-website)
+  - [Table of Contents](#table-of-contents)
+  - [About this project](#about-this-project)
+  - [Technologies and Libraries used](#technologies-and-libraries-used)
+  - [Some Code Samples](#some-code-samples)
+  - [Future Enhancements](#future-enhancements)
 
-## Available Scripts
+## About this project
+Every developer needs a portfolio website to show off some stuff they have made and what they can do. While my site is very simple it gets the message across. This is the fifth version of my portfolio site made mobile first and I can say that I am extremely satisfied with this one, and more improvements will be added as needed! 
 
-In the project directory, you can run:
+## Technologies and Libraries used
+<ul>
+<li> Create React App</li>
+<li> React</li>
+<li> SCSS</li>
+<li> i18n</li>
+<ul>
 
-### `npm start`
+## Some Code Samples
+I took some advice from one of my mentors from my previous roles and he suggested using a translation library for all the content on my site. Some examples of this: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+export default function About() {
+  const { t } = useTranslation();
+  return (
+    <summary className='chbi-about-section' id='home'>
+      <h1 className='chbi-greeting-about'>{t('hello-there')}</h1>
+      <div className='chbi-greeting-about-container'>
+        <p className='chbi-greeting-intro'>{t('introduction')} </p>
+      </div>
+      <div className='chbi-button-container'>
+        <a href='https://www.linkedin.com/in/kathleen-bongco-11843197/'><button className='chbi-button-linkedin'>{t('linkedIn')}</button></a>
+        <a href='http://github.com/kbongco'><button className='chbi-button-github'>{t('github')}</button></a>
+      </div>
+    </summary>
+  )
+}
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In the About component, I used the useTranslation hook which would get the data from a .json file: 
 
-### `npm test`
+```
+{
+  "home":"Home",
+  "about": "About",
+  "projects": "Projects",
+  "contact": "Contact me",
+  "hello-there": "Hello, there! 👀",
+  "introduction": "My name is Kathleen and I am a Front end engineer with experience creating responsive, user-friendly, and modern UIs with modern Javascript frameworks!",
+  "linkedIn": "LinkedIn",
+  "github": "Github",
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I used a translation library to mimic how it would be in a production app, similar to one of the projects I've worked on previously in my career. 
 
-### `npm run build`
+## Future Enhancements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+My portfolio site is constantly evolving with new projects that I am working on that I want to show off. That being said I know the projects section is hard-coded in instead of using the translation file above. I have something that I want to do with that, that may involve airtable :) 
