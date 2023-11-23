@@ -5,47 +5,20 @@
     font-size: 1.5rem;
   }
 
-  .chbi-projects-container-details {
-    .chbi-portfolio-site, .chbi-nookdepot-site {
-      height: 23vh;
-    }
+}
 
-    .chbi-lifting-data {
-      height: 50vh;
-    }
-  }
-
-  .chbi-project-link, .chbi-github-link {
-    color: aquamarine;
+@media screen and (min-width: 768px) {
+  .chbi-project-display-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 }
 
-@media screen and (min-width: 1020px) {
-
-  .chbi-projects-container {
-
-    .chbi-projects-header {
-      font-size: 48px;
-    }
-
-  }
-    .chbi-projects-container-details {
-  display: grid;
-grid-template-columns: repeat(2, 1.25fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 16px;
-grid-row-gap: 24px;
-font-size: 2rem;
-
-
-.chbi-projects-container-details {
-  .chbi-portfolio-site-mobile .chbi-nookdepot-site {
-    height: 53vh;
-  }
-
-  .chbi-lifting-data {
-    height: 50vh;
-  }
-}
+@media screen and (min-width: 1320px) {
+  .chbi-project-display-card-container {
+    flex-wrap: nowrap;
   }
 }

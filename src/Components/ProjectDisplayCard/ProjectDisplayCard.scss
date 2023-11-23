@@ -1,0 +1,32 @@
+.display-card-container {
+  height: 421px;
+  width: 323px;
+  background-color: #3A3503;
+  margin-bottom: 24px;
+
+  .display-card-picture-container {
+    display: flex;
+    justify-content: center;
+
+    .display-card-photo {
+      width: 66%;
+      margin-top: 16px;
+    }
+  }
+
+  .display-card-heading {
+    .display-card-heading-text {
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+
+  .display-card-project-description {
+    padding: 0 24px;
+  }
+
+  .display-card-project-links {
+    display: flex;
+    justify-content: center;
+  }
+}
