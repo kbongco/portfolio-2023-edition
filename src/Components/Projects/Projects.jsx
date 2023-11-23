@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import ProjectDisplayCard from "../ProjectDisplayCard/ProjectDisplayCard";
 
 export default function Projects({ projects }) {
-  console.log(projects);
   const { t } = useTranslation();
   return (
     <div className="chbi-projects-container" id="projects">
@@ -17,7 +16,6 @@ export default function Projects({ projects }) {
         !{" "}
       </p>
       <div className='chbi-project-display-card-container'>
-        {/* <ProjectDisplayCard/> */}
         {projects.map((project, index) => (
           <ProjectDisplayCard
             key={index}
