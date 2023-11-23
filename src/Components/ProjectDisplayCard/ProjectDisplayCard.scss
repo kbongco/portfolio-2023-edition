@@ -28,5 +28,15 @@
   .display-card-project-links {
     display: flex;
     justify-content: center;
+
+    .github-link, .figma-link {
+      margin-right: 8px;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
