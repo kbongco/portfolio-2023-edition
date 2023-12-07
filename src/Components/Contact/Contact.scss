@@ -1,5 +1,8 @@
 .chbi-contact-container {
   color: #F4F5FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 
   .chbi-contact-header {
     font-size: 1.5rem;
@@ -7,7 +10,7 @@
     margin-bottom: 8px;
   }
 
-    .chbi-currently-employed-message, .chbi-unemployed-message {
+  .chbi-currently-employed-message, .chbi-unemployed-message {
     .chbi-employed-text, .chbi-unemployed-text {
       text-align: center;
       font-size: 1rem;
@@ -28,21 +31,16 @@
       margin-top: 24px;
       border: none;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .chbi-contact-header {
-    font-size: 3rem;
-  }
+  @media screen and (min-width: 768px) {
+    .chbi-contact-header {
+      font-size: 3rem;
+    }
 
-  .chbi-button-container-contact {
-    display: flex;
-    justify-content: center;
-  }
-
-  .chbi-currently-employed-message, .chbi-unemployed-message {
-    .chbi-employed-text, .chbi-unemployed-text {
-      font-size: 1.5rem;
+    .chbi-currently-employed-message, .chbi-unemployed-message {
+      .chbi-employed-text, .chbi-unemployed-text {
+        font-size: 1.5rem;
+      }
     }
   }
 }
