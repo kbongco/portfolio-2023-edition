@@ -9,7 +9,6 @@ export default function Intro() {
       <div className='chbi-intro-information'>
         <p>{t('intro-one')}</p>
         <p> {t('intro-two')} </p>
-        <p>{t('intro-three')}</p>
       </div>
     </div>
   )
