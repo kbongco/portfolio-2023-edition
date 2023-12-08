@@ -16,8 +16,9 @@
   .chbi-button-container {
     display: flex;
     flex-direction: column;
-
-    .chbi-button-linkedin, .chbi-button-github {
+  
+    .chbi-button-linkedin,
+    .chbi-button-github {
       background-color: #FF9D57;
       height: 60px;
       width: 250px;
@@ -25,7 +26,26 @@
       font-size: 2rem;
       margin-top: 16px;
       border: none;
+      transition: box-shadow 0.3s, transform 0.3s;
+      cursor:pointer;
+  
+      &:hover {
+        animation: pulse 1s infinite; 
+        box-shadow: 0 0 0 10px rgba(255, 157, 87, 0.5); 
+      }
+    }
   }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
