@@ -15,15 +15,12 @@ function App() {
     <>
       <NavBar />
       <div className='App'>
-        <About/>
-      </div>
-      {/* <div className="App">
         <About />
-        <Intro /> 
+        <Intro />
         <Skills />
         <Projects projects={projects} />
         <Contact/>
-      </div> */}
+      </div>
     </>
   );
 }
