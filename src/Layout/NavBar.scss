@@ -1,24 +1,74 @@
-.chbi-nav-container {
-  font-size: 1.25rem;
-  margin-top: 24px;
-
-  .chbi-nav-links {
+.chbi-navbar {
+  .chbi-nav-container {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 
-    .chbi-links {
-      color: #F4F5FA;
-      padding-right: 8px;
-      text-decoration: none;
+    .chbi-logo-container {
+      h1 {
+        color: white;
+      }
+    }
+    .chbi-mobile-icon {
+      display: flex;
+      align-items: center;
+
+      
+      svg {
+        color: #F4F5FA;
+        // color: #03083A;
+        height: 40px;
+      }
     }
   }
-}
 
-@media screen and (min-width: 1020px) {
-  .chbi-nav-container {
-  .chbi-nav-links {
-    display:flex;
-    justify-content: end;
+  .chbi-nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 0;
+    height: calc(100vh - 60px);
+    transition: transform 0.3s ease-in;
+    overflow: hidden; 
+    background-color: #F4F5FA;
+    // background-color: #03083A; 
+  }
+
+  .chbi-nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+    font-size: 2rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .chbi-navbar {
+    .chbi-nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      height: 100%;
+
+      .chbi-mobile-icon {
+        display: none;
+      }
+    }
+  }
 }
