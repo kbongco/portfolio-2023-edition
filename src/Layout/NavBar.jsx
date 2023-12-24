@@ -1,8 +1,9 @@
 import "./NavBar.scss";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import NavLink from "./NavLinks/NavLinks";
 export default function NavBar() {
   const { t } = useTranslation();
   const [showNav, setShowNav] = useState(false);
@@ -10,6 +11,10 @@ export default function NavBar() {
   const toggleItems = () => {
     setShowNav(!showNav);
   };
+
+  const closeNav = (to) => {
+    setShowNav(false);
+  }
 
   return (
     <nav className='chbi-navbar'>
@@ -21,24 +26,15 @@ export default function NavBar() {
         <FontAwesomeIcon icon={faBars} />
         </div>
         <div className={`chbi-nav-elements  ${showNav && 'active'}`}>
+          <div className='chbi-mobile-exit' onClick={closeNav}>
+          <FontAwesomeIcon icon={faX} />
+          </div>
           <ul>
+            <NavLink to="#home" label={t('home')} onClick={closeNav} />
+            <NavLink to="#about" label={t("About")} onClick={closeNav} />
+            <NavLink to="#projects" label= {t("Projects")} onClick={closeNav}/>
             <li>
-              <a className='chbi-links' href="#home">
-              {t("home")}
-              </a>
-            </li>
-            <li>
-              <a className='chbi-links'>
-              {t("About")}
-              </a>
-            </li>
-            <li>
-              <a className='chbi-links' href="#projects">
-              {t("Projects")}
-              </a>
-            </li>
-            <li>
-              <a className='chbi-links' href='#contact'>
+              <a className='chbi-links' href='#contact'  onClick={closeNav}>
               {t("contact")}
               </a>
             </li>

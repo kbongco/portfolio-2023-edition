@@ -1,11 +1,15 @@
 .chbi-navbar {
   .chbi-nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .chbi-logo-container {
+      display: flex;
+      align-items: center;
+      
       h1 {
         color: white;
+        font-size: 2.5rem;
       }
     }
     .chbi-mobile-icon {
@@ -29,19 +33,31 @@
     transition: transform 0.3s ease-in;
     overflow: hidden; 
     background-color: #F4F5FA;
+
+    .chbi-mobile-exit { 
+      display: flex;
+    justify-content: end;
+    margin-right: 16px;
+    height: 5%;
+    align-items: center;
+
+    svg {
+      height: 30px;
+    }
+    }
   }
 
   .chbi-nav-elements.active {
     width: 270px;
   }
 
-  .nav-elements ul {
+  .chbi-nav-elements ul {
     display: flex;
     flex-direction: column;
     list-style: none;
   }
 
-  .nav-elements ul li {
+  .chbi-nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
     font-size: 2rem;
@@ -53,20 +69,61 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
   .chbi-navbar {
-    .chbi-nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 15px;
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      height: 100%;
 
+    .chbi-nav-container {
+      display: flex;
+      justify-content: space-around;
+  
+      .chbi-logo-container {
+        display: flex;
+        align-items: center;
+        
+        h1 {
+          color: white;
+          font-size: 2.5rem;
+        }
+      }
       .chbi-mobile-icon {
+        display: flex;
+        align-items: center;
+  
+        
+        svg {
+          color: #F4F5FA;
+          height: 40px;
+        }
+      }
+    }
+    .chbi-nav-elements {
+      position: relative;
+      width: auto;
+      height: auto;
+      background: transparent;
+      overflow:visible;
+      top: 0;
+    }
+  
+    .chbi-nav-elements ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      font-size: 1.5rem;
+    }
+  
+    .chbi-nav-elements ul li {
+      margin-right: 16px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .chbi-mobile-icon, .chbi-mobile-exit {
+      svg {
         display: none;
       }
     }
   }
-}
+} 
