@@ -9,6 +9,7 @@ export default function Skills() {
     <div className='chbi-skills-container'>
       <h3 className='chbi-skills-title'>{t('tools-header')}</h3>
       <p className='chbi-skills-paragraph'>{t('tools-description')}</p>
+      <p className='chbi-languages'>{t('languages-frameworks-tools')}</p>
       <div className='chbi-skills-card-container-flex'>
       {skills.map((skill) => (
           <SkillsCard 

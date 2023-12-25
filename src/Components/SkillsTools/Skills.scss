@@ -5,7 +5,7 @@
     margin-bottom: 8px;
   }
 
-  .chbi-skills-paragraph {
+  .chbi-skills-paragraph, .chbi-languages {
     color: 	#F4F5FA;
     font-size: 1rem;
   }
@@ -18,30 +18,17 @@
   }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 768px) {
   .chbi-skills-container {
   .chbi-skills-title {
-    font-size: 3rem;
+    font-size: 1.75rem;
     color: #F4F5FA;
     margin-bottom: 8px;
   }
 
-  .chbi-skills-paragraph {
+  .chbi-skills-paragraph, .chbi-languages {
     color: 	#F4F5FA;
     font-size: 2rem;
-  }
-
-  .chbi-skills-list-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.35fr 1fr;
-    grid-column-gap: 8px;
-    grid-row-gap: 0px;
-    color: 	#F4F5FA;
-
-    .chbi-skills-grid-title {
-      font-weight:800;
-    }
   }
 }
 }

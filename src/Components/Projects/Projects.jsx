@@ -9,7 +9,7 @@ export default function Projects({ projects }) {
   return (
     <div className="chbi-projects-container" id="projects">
       <h4 className="chbi-projects-header">{t("projects-cool")}</h4>
-      <p>{t('projects-description')}{" "}
+      <p className='chbi-projects-description'>{t('projects-description')}{" "}
         <a className="chbi-github-link" href="http://github.com/kbongco">
           {t('github')}
         </a>
