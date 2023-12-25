@@ -17,6 +17,7 @@ export default function Projects({ projects }) {
       </p>
       <div className='chbi-project-display-card-container'>
         {projects.map((project, index) => (
+          <div className='chbi-project-display-card-parent'>
           <ProjectDisplayCard
             key={index}
             image={project.projectImg}
@@ -25,7 +26,8 @@ export default function Projects({ projects }) {
             githubLink={project.github || project.githubLink}
             figmaLink={project.design || project.figmaLink}
             deployedLink={project.deployedLink}
-          />
+            />
+            </div>
         ))}
       </div>
     </div>

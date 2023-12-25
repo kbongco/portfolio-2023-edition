@@ -1,6 +1,8 @@
 
 .chbi-about-section {
   color: 	#F4F5FA;
+  display: flex;
+  flex-direction: column;
 
   .chbi-greeting-about {
     font-size: 2.5rem;
