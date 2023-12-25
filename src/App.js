@@ -5,7 +5,6 @@ import Intro from './Components/Intro/Intro';
 import Skills from './Components/SkillsTools/Skills';
 import Contact from './Components/Contact/Contact';
 import Projects from './Components/Projects/Projects';
-import axios from 'axios';
 import { projects } from './constants';
 
 function App() {
@@ -13,12 +12,12 @@ function App() {
   
   return (
     <>
-        <NavBar/>
-      <div className="App">
+      <NavBar />
+      <div className='App'>
         <About />
-        <Intro /> 
+        <Intro />
         <Skills />
-        <Projects projects={projects} />
+        <Projects projects={projects} /> 
         <Contact/>
       </div>
     </>

@@ -2,12 +2,27 @@
   color: #F4F5FA;
 
   .chbi-projects-header {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
+  .chbi-project-display-card-parent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .chbi-projects-description {
+    .chbi-github-link {
+      color: #F4F5FA;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .chbi-projects-container {
+    .chbi-projects-description {
+      font-size: 2rem;
+    }
+  }
   .chbi-project-display-card-container{
     display: flex;
     flex-direction: row;

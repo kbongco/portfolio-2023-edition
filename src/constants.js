@@ -1,14 +1,98 @@
-import weebtrade from '../src/assets/weebtrade.png';
-import weebjams from '../src/assets/weebjams.png';
-import samples from '../src/assets/samples.png'
+import { Html5Original } from 'devicons-react';
+import { Css3OriginalWordmark } from 'devicons-react';
+import { JavascriptPlain } from 'devicons-react';
+import { TypescriptOriginal } from 'devicons-react';
+import { SassOriginal } from 'devicons-react';
+import { PythonPlainWordmark } from 'devicons-react';
+import { RubyOriginalWordmark } from 'devicons-react';
+import { ReactOriginalWordmark } from 'devicons-react';
+import { AngularjsOriginal } from 'devicons-react';
+import { ReduxOriginal } from 'devicons-react';
+import { RailsOriginalWordmark } from 'devicons-react';
+import { GitOriginal } from 'devicons-react';
+import { FigmaOriginal } from 'devicons-react';
+import { JiraOriginal } from 'devicons-react';
+import { LinuxOriginal } from 'devicons-react';
+import { PostgresqlPlainWordmark } from 'devicons-react';
+import { VscodeOriginal } from 'devicons-react';
+import { FlaskOriginal } from 'devicons-react';
 
-export const Languages = ['HTML', 'CSS', 'Javascript', 'Typescript', 'Python', 'Ruby', 'SQL/PSQL', 'Node.js']
 
-export const frameworksAndLibraries = ['React.js', 'Angular', 'Flask', 'Rails', 'RxJs', 'Redux', 'Express', 'Mongoose']
 
-export const tools = ['VSCode', 'Git/Github', 'Figma', 'Postman', 'Linux', 'NPM', 'Vite', 'Supabase']
-
-export const currentLearning = ['Next.js', 'GraphQL', 'NestJS', 'Improving my other skills']
+export const skills = [
+  {
+    name: 'HTML',
+    icon: <Html5Original/>
+  },
+  {
+    name: 'CSS',
+    icon: <Css3OriginalWordmark/>
+  },
+  {
+    name: 'Javascript',
+    icon: <JavascriptPlain />
+  },
+  {
+    name: 'Typescript',
+    icon:  <TypescriptOriginal/>
+  },
+  {
+    name: 'SASS',
+    icon: <SassOriginal/>
+  },
+  {
+    name: 'Python',
+    icon: <PythonPlainWordmark/>
+  },
+  {
+    name: 'Ruby',
+    icon: <RubyOriginalWordmark/>
+  },
+  {
+    name: 'React',
+    icon: <ReactOriginalWordmark/>
+  },
+  {
+    name: 'Angular',
+    icon: <AngularjsOriginal/>
+  },
+  {
+    name: 'Redux',
+    icon: <ReduxOriginal/>
+  },
+  {
+    name: 'Rails',
+    icon: <RailsOriginalWordmark/>
+  },
+  {
+    name: 'Flask',
+    icon: <FlaskOriginal/>
+  },
+  {
+    name: 'PostGresQL',
+    icon: <PostgresqlPlainWordmark/>
+  },
+  {
+    name: 'Git',
+    icon: <GitOriginal/>
+  },
+  {
+    name: 'Figma',
+    icon: <FigmaOriginal/>
+  },
+  {
+    name: 'Jira',
+    icon: <JiraOriginal/>
+  },
+  {
+    name: 'Linux',
+    icon: <LinuxOriginal/>
+  },
+  {
+    name: 'VSCode',
+    icon: <VscodeOriginal/>
+  }
+]
 
 export const projects = [
   {

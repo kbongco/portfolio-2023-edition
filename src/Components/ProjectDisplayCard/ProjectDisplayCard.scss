@@ -1,8 +1,11 @@
 .display-card-container {
   height: 421px;
   width: 323px;
-  background-color: #3A3503;
+  background-color: #F4F5FA;
+  color: #03083A;
   margin-bottom: 24px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #F4F5FA;
 
   .display-card-picture-container {
     display: flex;
@@ -32,7 +35,7 @@
     .github-link, .figma-link {
       margin-right: 8px;
       text-decoration: none;
-      color: white;
+      color: #03083A;
 
       &:hover {
         text-decoration: underline;

@@ -4,7 +4,7 @@
   "projects": "Projects",
   "contact": "Contact me",
   "hello-there": "Hello, there! 👀",
-  "introduction": "My name is Kathleen and I am a Front end engineer with experience creating responsive, user-friendly, and modern UIs with modern Javascript frameworks!",
+  "introduction": "My name is Kathleen and I am a software engineer with experience creating responsive, user-friendly, and modern UIs with modern Javascript frameworks!",
   "linkedIn": "LinkedIn",
   "github": "Github",
   "intro-one":"I am a former food scientist turned software engineer! I went to a coding bootcamp during the height of COVID then later went on to work in front end development in both React and Angular, during my time working in front end development. Working in front end development, I ended up working with designers as well and gained some skills in design through them. While also practicing my development skills, I also continued to develop my skills in design with prototyping and making wireframes, while also learning more about UX research. My abilities in both design and coding I believe can be a great asset to whatever project you are working on! :)   ",
@@ -18,5 +18,6 @@
   "projects-cool": "Projects and Cool things",
   "projects-description": "Here are some projects I've worked on in the past and some of the cool stuff I am currently working and playing around with! This is just a small set of projects I have worked on, if you would like to see some source code check out my",
   "contact-description-unemployed": "I am currently looking for new roles in front end development, UX Engineering, and full stack roles. If you like what you see or maybe just want to chat, send me a message below when filling out this form!",
-  "contact-description-employed": "I am currently not looking for any new roles at the moment, but I am down to help out in some way or form and to chat! Send me a message below when filling out this form!"
+  "contact-description-employed": "I am currently not looking for any new roles at the moment, but I am down to help out in some way or form and to chat! Send me a message below when filling out this form!",
+  "languages-frameworks-tools": "Languages, Frameworks, and Tools "
 }

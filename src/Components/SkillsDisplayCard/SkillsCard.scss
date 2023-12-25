@@ -1,0 +1,21 @@
+.chbi-skills-card-container {
+    height: 224px;
+    width: 159px;
+    border-radius: 30px;
+    background-color: #F4F5FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+    .chbi-skills-card-content {
+      svg {
+       width: 93px !important;
+       height: 78px !important;
+      }
+    }
+
+    .chbi-skills-card-name {
+      margin-top: 16px;
+    }
+}
