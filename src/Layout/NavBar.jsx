@@ -32,6 +32,7 @@ export default function NavBar() {
           <ul>
             <NavLink to="#home" label={t('home')} onClick={closeNav} />
             <NavLink to="#about" label={t("About")} onClick={closeNav} />
+            <NavLink to="#skills" label={t("Skills")} onClick={closeNav}/>
             <NavLink to="#projects" label= {t("Projects")} onClick={closeNav}/>
             <li>
               <a className='chbi-links' href='#contact'  onClick={closeNav}>
