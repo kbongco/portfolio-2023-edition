@@ -1,10 +1,13 @@
 import "./About.css";
+import { Heading } from "@chakra-ui/react";
 
 export default function About() {
   return (
     <>
       <section className="about-portfolio-section">
-        <h1 className='portfolio-greeting'>Hello There!</h1>
+        <Heading as="h1" size="lg">
+          Hello There!
+        </Heading>
         <div className="about-portfolio-container">
           <div className="about-portfolio-profile-pic">
             <img
@@ -26,7 +29,7 @@ export default function About() {
           </div>
         </div>
         <div className="about-portfolio-announcement">
-          <p className='portfolio-announcement-text'>
+          <p className="portfolio-announcement-text">
             My portfolio site is inspired by video games such as Final Fantasy
             and DnD. If this looks confusing and you would prefer a more
             traditional view of my experience, feel free to use the toggle

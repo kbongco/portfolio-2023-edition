@@ -1,14 +1,24 @@
 import "./NavBar.css";
+import { Switch } from "@chakra-ui/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGamepad, faUserTie } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default function NavBar() {
   return (
     <>
       <nav className="portfolio-nav">
-        <div className='portfolio-links-container'>
-          <a className='portfolio-menu-item'>About</a>
-          <a className='portfolio-menu-item'>Quests</a>
-          <a className='portfolio-menu-item'>Key Items</a>
-          <a className='portfolio-menu-item'>DM</a>
+        <div className='switch-container'>
+        <FontAwesomeIcon icon={faGamepad} />
+          <Switch size='md' className='navbar-switch'/>
+          <FontAwesomeIcon icon={faUserTie} />
+        </div>
+        <div className="portfolio-links-container">
+          <a className="portfolio-menu-item">About</a>
+          <a className="portfolio-menu-item">Quests</a>
+          <a className="portfolio-menu-item">Key Items</a>
+          <a className="portfolio-menu-item">DM</a>
         </div>
       </nav>
     </>

@@ -1,7 +1,7 @@
 .main-information-portfolio {
   width: 85%;
   margin-top: 16px;
-  height: 502px;
+  height: 902px;
   background-color: #2919E4;
   border: 5px solid white;
   border-radius: 10px;
@@ -12,4 +12,8 @@
   .main-information-portfolio {
     height: auto;
   }
+}
+
+.special-abilities-container, .hobbies-and-fun-container, .currently-equipped-container {
+  padding: 0.5rem;
 }

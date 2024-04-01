@@ -19,11 +19,6 @@
   margin-left: 8px;
 }
 
-.portfolio-pic {
-  width: 150px;
-  height: 213px;
-}
-
 .about-portfolio-announcement {
   height: 30%;
   display: flex;
@@ -32,4 +27,9 @@
 
 .portfolio-announcement-text {
   padding-left: 16px;
+}
+
+h1 {
+  margin-right: 1rem;
+  text-align: right;
 }
