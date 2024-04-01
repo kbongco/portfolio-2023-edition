@@ -26,4 +26,8 @@
   .portfolio-nav {
     font-size: 2rem;
   }
+
+  .left-column-desktop {
+    width: 55%;
+  }
 }

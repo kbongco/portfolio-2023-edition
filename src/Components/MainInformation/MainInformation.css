@@ -1,0 +1,15 @@
+.main-information-portfolio {
+  width: 85%;
+  margin-top: 16px;
+  height: 502px;
+  background-color: #2919E4;
+  border: 5px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .main-information-portfolio {
+    height: auto;
+  }
+}

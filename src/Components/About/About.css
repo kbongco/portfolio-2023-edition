@@ -1,0 +1,35 @@
+.about-portfolio-section {
+  width: 85%;
+  margin-top: 16px;
+  height: 502px;
+  background-color: #2919E4;
+  border: 5px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+.portfolio-greeting {
+  text-align: right;
+  margin-right: 16px;
+}
+
+.about-portfolio-container {
+  display: flex;
+  gap: 16px;
+  margin-left: 8px;
+}
+
+.portfolio-pic {
+  width: 150px;
+  height: 213px;
+}
+
+.about-portfolio-announcement {
+  height: 30%;
+  display: flex;
+  align-items: end;
+}
+
+.portfolio-announcement-text {
+  padding-left: 16px;
+}
