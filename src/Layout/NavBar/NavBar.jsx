@@ -5,7 +5,7 @@ import { faGamepad, faUserTie } from '@fortawesome/free-solid-svg-icons';
 
 
 
-export default function NavBar() {
+export default function NavBar({onNavItemClick}) {
   return (
     <>
       <nav className="portfolio-nav">
@@ -15,8 +15,9 @@ export default function NavBar() {
           <FontAwesomeIcon icon={faUserTie} />
         </div>
         <div className="portfolio-links-container">
-          <a className="portfolio-menu-item">About</a>
-          <a className="portfolio-menu-item">Quests</a>
+          <a className="portfolio-menu-item" onClick={() => onNavItemClick('MainInformation')}>About</a>
+          <a className="portfolio-menu-item"
+          onClick={() => onNavItemClick('Quests')}>Quests</a>
           <a className="portfolio-menu-item">Key Items</a>
           <a className="portfolio-menu-item">DM</a>
         </div>

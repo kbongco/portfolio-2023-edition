@@ -1,0 +1,55 @@
+.quests-information {
+  width: 85%;
+  margin-top: 16px;
+  height: auto;
+  background-color: #2919E4;
+  border: 5px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+.quests-information-container {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+}
+
+.quest-company {
+  width: auto;
+  height: 87px;
+}
+
+.quests-picture {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.experience-gained {
+  padding: 1rem;
+}
+
+.quests-header {
+  text-align: left;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.sideproject-switch {
+  display: flex;
+    /* list-style: none; */
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+.quest-list {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+.quests-information {
+    height: auto;
+}
+}
