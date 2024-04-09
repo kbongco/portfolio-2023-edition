@@ -17,7 +17,9 @@ export default function SocialLinks() {
         </p>
         <div className="social-links-icon-container">
           <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
+          <a href='http://github.com/kbongco'>
           <FontAwesomeIcon icon={faGithubAlt} className="social-icons" />
+          </a>
           <a href="https://forms.gle/1fbUHyajsvyAS9e38">
             <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
           </a>

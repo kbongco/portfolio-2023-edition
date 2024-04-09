@@ -35,6 +35,10 @@
   align-items: center;
 }
 
+.active-link {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px){
   .portfolio-nav {
     font-size: 2rem;

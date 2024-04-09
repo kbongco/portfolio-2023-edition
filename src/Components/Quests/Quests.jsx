@@ -17,8 +17,19 @@ export default function Quests() {
         </Heading>
         <div className="sideproject-switch">
           <ul className="quest-list">
-            <li onClick={() => handleContentChange("quests")}>Quests</li>
-            <li onClick={() => handleContentChange("sideQuests")}>
+          <li
+              onClick={() => handleContentChange("quests")}
+              className={`quest-item ${activeContent === "quests" ? "active-link" : ""}`}
+            >
+              Quests
+            </li>
+            <li>
+              |
+            </li>
+              <li
+              onClick={() => handleContentChange("sideQuests")}
+              className={`quest-item ${activeContent === "sideQuests" ? "active-link" : ""}`}
+            >
               Side Quests
             </li>
           </ul>
