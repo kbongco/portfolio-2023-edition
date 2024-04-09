@@ -18,8 +18,7 @@ export default function NavBar({onNavItemClick}) {
           <a className="portfolio-menu-item" onClick={() => onNavItemClick('MainInformation')}>About</a>
           <a className="portfolio-menu-item"
           onClick={() => onNavItemClick('Quests')}>Quests</a>
-          <a className="portfolio-menu-item">Key Items</a>
-          <a className="portfolio-menu-item">DM</a>
+          <a className="portfolio-menu-item" onClick={() => onNavItemClick('Inventory')}>Inventory</a>
         </div>
       </nav>
     </>

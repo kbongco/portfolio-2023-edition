@@ -1,11 +1,15 @@
 .main-information-portfolio {
   width: 85%;
   margin-top: 16px;
-  height: 902px;
-  background-color: #2919E4;
+  height: auto;
+  background-color: #03083A;
   border: 5px solid white;
   border-radius: 10px;
   color: white;
+}
+
+.hobbies {
+  list-style: none;
 }
 
 @media screen and (min-width: 768px) {

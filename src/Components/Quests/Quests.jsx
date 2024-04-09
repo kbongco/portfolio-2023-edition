@@ -100,6 +100,11 @@ export default function Quests() {
                 Express.js, MongoDB, SQL
               </p>
             </div>
+            <div className='learn-more'>
+              <p className='check-out-linked-in'>
+                If you are interested in seeing more of my completed Quests, check out my linkedIn!
+                </p>
+            </div>
           </>
         )}
         {activeContent === "sideQuests" && (
@@ -169,6 +174,11 @@ export default function Quests() {
               <p>
                 Experience Gained in: CSS, Javascript, React.
               </p>
+            </div>
+            <div className='learn-more'>
+              <p className='check-out-linked-in'>
+These are my top 3 side quests that I am currently working on. If you are interested in seeing more of my work check out my github!
+                </p>
             </div>
           </>
         )}

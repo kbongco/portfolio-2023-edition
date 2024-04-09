@@ -48,7 +48,7 @@ export default function MainInformation() {
               Hobbies and Fun Things
             </Heading>
             <div className='hobbies-list'>
-              <ul>
+              <ul className='hobbies'>
                 <li>I'm a competitive powerlifter in the USAPL and I also am a state referee</li>
                 <li>I love watching anime and I also attend anime conventions where I sometimes present panels on traveling</li>
                 <li>I'm a huge video game enthusiast (as you can see from my portfolio site!)</li>

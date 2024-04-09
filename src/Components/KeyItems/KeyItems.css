@@ -1,0 +1,55 @@
+.key-items-pocket {
+  width: 85%;
+  margin-top: 16px;
+  height: auto;
+  background-color: #03083A;
+  border: 5px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+.key-items-heading {
+  margin-left: 1rem;
+}
+
+.key-items-current-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.key-items-text-name {
+  display: flex;
+  align-items: center;
+}
+.equipped-languages {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.key-items-equipped-heading {
+  margin-top: 1rem;
+}
+
+.code-icon {
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+
+.grouped-languages {
+  margin-top: 1rem;
+}
+
+.items-title {
+  margin-left: 0.5rem;
+}

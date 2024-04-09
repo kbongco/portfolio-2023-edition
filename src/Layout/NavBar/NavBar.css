@@ -2,7 +2,7 @@
   height: 72px;
   width: 85%;
   margin-top: 16px;
-  background-color: #2919E4;
+  background-color: #03083A;
   border: 5px solid white;
   border-radius: 10px;
   color: white;
@@ -42,6 +42,10 @@
 
   .left-column-desktop {
     width: 55%;
+  }
+
+  .portfolio-links-container {
+    gap: 1.5rem;
   }
 
 }

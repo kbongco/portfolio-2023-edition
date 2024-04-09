@@ -5,9 +5,10 @@ export default function About() {
   return (
     <>
       <section className="about-portfolio-section">
-        <Heading as="h1" size="lg">
+        {/* <Heading as="h1" size="lg">
           Hello There!
-        </Heading>
+        </Heading> */}
+        <h1>Hello There!</h1>
         <div className="about-portfolio-container">
           <div className="about-portfolio-profile-pic">
             <img
