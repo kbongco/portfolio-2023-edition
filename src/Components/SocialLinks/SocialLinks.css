@@ -1,0 +1,40 @@
+.social-links-portfolio {
+  height: auto;
+  width: 85%;
+  margin-top: 16px;
+  background-color: #03083A;
+  border: 5px solid white;
+  color: white;
+}
+
+.social-header {
+  text-align: center;
+}
+
+.social-icons {
+  height: 50px;
+}
+
+.main-information-header {
+  text-align: left;
+}
+
+.equipped-icon {
+  height: 50px;
+}
+
+.progress-level-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 85%;
+}
+
+.next-level {
+  text-align: right;
+}
+
+.social-links-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
