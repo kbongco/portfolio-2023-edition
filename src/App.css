@@ -35,4 +35,10 @@
 .left-column-desktop {
   width: 55%;
 }
+
+.App {
+  display: flex;
+  align-items: initial;
+}
+
 }

@@ -3,17 +3,19 @@ import { Heading } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "../../Context/toggleContext";
 
 export default function SocialLinks() {
+  const { theme } = useTheme();
+  
   return (
     <>
       <section className="social-links-portfolio">
         <Heading as="h1" size="lg" className="social-header">
-          Social Links
+          {theme === "videoGame" ? 'Social Links' : 'Contact'}
         </Heading>
-        <p>
-          I am currently looking for my next quest where I can leverage some of
-          my skills in web development specifically in full stack development. If you like what you see and you want me to join your party and help your current quest, help in your latest venture or product, or even if you just want to chat. Here are some ways you can contact me!
+        <p className='contact-text'>
+          {theme === "videoGame" ? "I am currently looking for my next quest where I can leverage some of my skills in web development. Specifically in full stack. If you like what you see and want me to join your party and help your current quest, help in your latest venture, or even if you just want to chat. Here are some links you can use to contact me! " : 'I am currently looking for my next role where I can use my skills in web development, specifically in full stack! If you like what you see and you would like me to speak to me about any new roles, want some help in design or development, or if you just want to chat here are some links you can use to contact me!'}
         </p>
         <div className="social-links-icon-container">
           <FontAwesomeIcon icon={faLinkedin} className="social-icons" />

@@ -9,7 +9,7 @@
 }
 
 .key-items-heading {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .key-items-current-container {
@@ -35,6 +35,9 @@
   align-items: center;
 }
 
+.key-items-heading {
+  margin-top: 1rem;
+}
 
 .key-items-equipped-heading {
   margin-top: 1rem;
@@ -51,5 +54,10 @@
 }
 
 .items-title {
+  margin-left: 0.5rem;
+}
+
+.other-tools-no-icons {
+  margin-top: 0.5rem;
   margin-left: 0.5rem;
 }

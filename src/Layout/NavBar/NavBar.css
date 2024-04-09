@@ -52,4 +52,8 @@
     gap: 1.5rem;
   }
 
+  .portfolio-nav {
+    width: auto;
+  }
+
 }

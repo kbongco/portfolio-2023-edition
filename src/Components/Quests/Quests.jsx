@@ -1,9 +1,12 @@
 import "./Quests.css";
 import { Heading } from "@chakra-ui/react";
 import { useState } from "react";
+import { useTheme } from "../../Context/toggleContext";
+import { useContext } from "react";
 
 export default function Quests() {
   const [activeContent, setActiveContent] = useState("quests");
+  const { theme } = useTheme();
 
   const handleContentChange = (content) => {
     setActiveContent(content);
@@ -13,26 +16,60 @@ export default function Quests() {
     <>
       <div className="quests-information">
         <Heading as="h1" size="lg" className="quests-header">
-          {activeContent === "quests" ? "Quests" : "Side Quests"}
+          {activeContent === "quests" && theme === "videoGame"
+            ? "Quests"
+            : activeContent === "quests" && theme === "professional"
+            ? "Experience"
+            : activeContent === "sideQuests" && theme === "videoGame"
+            ? "Side Quests"
+            : activeContent === "sideQuests" && theme === "professional"
+            ? "Side Projects"
+            : ""}
         </Heading>
         <div className="sideproject-switch">
-          <ul className="quest-list">
-          <li
-              onClick={() => handleContentChange("quests")}
-              className={`quest-item ${activeContent === "quests" ? "active-link" : ""}`}
-            >
-              Quests
-            </li>
-            <li>
-              |
-            </li>
+          {theme === "videoGame" ? (
+            <ul className="quest-list">
               <li
-              onClick={() => handleContentChange("sideQuests")}
-              className={`quest-item ${activeContent === "sideQuests" ? "active-link" : ""}`}
-            >
-              Side Quests
-            </li>
-          </ul>
+                onClick={() => handleContentChange("quests")}
+                className={`quest-item ${
+                  activeContent === "quests" ? "active-link" : ""
+                }`}
+              >
+                Quests
+              </li>
+              <li>|</li>
+              <li
+                onClick={() => handleContentChange("sideQuests")}
+                className={`quest-item ${
+                  activeContent === "sideQuests" ? "active-link" : ""
+                }`}
+              >
+                Side Quests
+              </li>
+            </ul>
+          ) : (
+            <>
+              <ul className="quest-list">
+                <li
+                  onClick={() => handleContentChange("quests")}
+                  className={`quest-item ${
+                    activeContent === "quests" ? "active-link" : ""
+                  }`}
+                >
+                  Professional
+                </li>
+                <li>|</li>
+                <li
+                  onClick={() => handleContentChange("sideQuests")}
+                  className={`quest-item ${
+                    activeContent === "sideQuests" ? "active-link" : ""
+                  }`}
+                >
+                  Side Projects
+                </li>
+              </ul>
+            </>
+          )}
         </div>
         {activeContent === "quests" && (
           <>
@@ -45,7 +82,7 @@ export default function Quests() {
                   border="0"
                 />
                 <div className="quests-text">
-                  <p>UX Engineer @ EY Design Studio</p>
+                  <h3>UX Engineer @ EY Design Studio</h3>
                   <p>February 2022 - March 2023</p>
                   <p>
                     Supported the redesign of client's internal site to Angular
@@ -70,7 +107,7 @@ export default function Quests() {
                   border="0"
                 />
                 <div className="quests-text">
-                  <p>Junior Software Developer @ Verizon via Infovision</p>
+                  <h3>Junior Software Developer @ Verizon via Infovision</h3>
                   <p>March 2021 - February 2022</p>
                   <p>
                     Supported the redesign of current customer features
@@ -96,7 +133,7 @@ export default function Quests() {
                   border="0"
                 />
                 <div className="quests-text">
-                  <p>Software Engineer Fellow @ General Assembly</p>
+                  <h3>Software Engineer Fellow @ General Assembly</h3>
                   <p>June 2020 - September 2020</p>
                   <p>
                     Attended a 12 week immersive bootcamp, learning full stack
@@ -111,10 +148,14 @@ export default function Quests() {
                 Express.js, MongoDB, SQL
               </p>
             </div>
-            <div className='learn-more'>
-              <p className='check-out-linked-in'>
-                If you are interested in seeing more of my completed Quests, check out my linkedIn!
-                </p>
+            <div className="learn-more">
+              <p className="check-out-linked-in">
+                {theme === "videoGame"
+                  ? "If you are interested in seeing more of my completed quests, check out my linkedin!"
+                  : "If you would like to see more of my professional experience, check out my linkedin!"}
+                {/* If you are interested in seeing more of my completed Quests,
+                check out my linkedIn! */}
+              </p>
             </div>
           </>
         )}
@@ -129,7 +170,7 @@ export default function Quests() {
                   border="0"
                 />
                 <div className="quests-text">
-                  <p>Creatine Reminder 4 U</p>
+                  <h3>Creatine Reminder 4 U</h3>
                   <p>Github | Figma Design</p>
                   <p>
                     A mobile first Progressive Web application which users can
@@ -150,46 +191,54 @@ export default function Quests() {
               <div className="quests-picture">
                 <img
                   className="quest-company"
-                  src="https://i.ibb.co/FgWNtPs/Screen-Shot-2024-04-02-at-11-39-17-AM.png" alt="Screen-Shot-2024-04-02-at-11-39-17-AM" border="0"
+                  src="https://i.ibb.co/FgWNtPs/Screen-Shot-2024-04-02-at-11-39-17-AM.png"
+                  alt="Screen-Shot-2024-04-02-at-11-39-17-AM"
+                  border="0"
                 />
                 <div className="quests-text">
-                  <p>WeebTrade</p>
+                  <h3>WeebTrade</h3>
                   <p>Github | Figma</p>
                   <p>
-                    A mobile first e-commerce web application with a modern UI look where users can trade anime figures. 
+                    A mobile first e-commerce web application with a modern UI
+                    look where users can trade anime figures.
                   </p>
                 </div>
               </div>
             </div>
             <div className="experience-gained">
               <p>
-                Experience Gained in: React, Typescript, SCSS, Creating Component, Ruby, Rails, Supabase
+                Experience Gained in: React, Typescript, SCSS, Creating
+                Component, Ruby, Rails, Supabase
               </p>
             </div>
             <div className="quests-information-container">
               <div className="quests-picture">
                 <img
                   className="quest-company"
-                  src="https://i.ibb.co/LnB5q68/Screen-Shot-2024-04-02-at-11-39-49-AM.png" alt="Screen-Shot-2024-04-02-at-11-39-49-AM" border="0"
+                  src="https://i.ibb.co/LnB5q68/Screen-Shot-2024-04-02-at-11-39-49-AM.png"
+                  alt="Screen-Shot-2024-04-02-at-11-39-49-AM"
+                  border="0"
                 />
                 <div className="quests-text">
-                  <p>Portfolio Site</p>
+                  <h3>Portfolio Site</h3>
                   <p>Github | Figma</p>
                   <p>
-                    My portfolio site is also an ongoing side project. This rendition is my 7th edition of my portfolio site. Updated to have a little bit more of a unique look compared to others.
+                    My portfolio site is also an ongoing side project. This
+                    rendition is my 7th edition of my portfolio site. Updated to
+                    have a little bit more of a unique look compared to others.
                   </p>
                 </div>
               </div>
             </div>
             <div className="experience-gained">
-              <p>
-                Experience Gained in: CSS, Javascript, React.
-              </p>
+              <p>Experience Gained in: CSS, Javascript, React.</p>
             </div>
-            <div className='learn-more'>
-              <p className='check-out-linked-in'>
-These are my top 3 side quests that I am currently working on. If you are interested in seeing more of my work check out my github!
-                </p>
+            <div className="learn-more">
+              <p className="check-out-linked-in">
+                {theme === "videoGame"
+                  ? "These are my top 3 side quests that I am working on, if you are curious to see more of my active side quests and completed side quests, check out my github!"
+                  : "These are some of my side projects that I am currently working on. If you would like to see some of my previous projects and work, check out my github!"}
+              </p>
             </div>
           </>
         )}

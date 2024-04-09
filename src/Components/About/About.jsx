@@ -1,13 +1,9 @@
 import "./About.css";
-import { Heading } from "@chakra-ui/react";
 
 export default function About() {
   return (
     <>
       <section className="about-portfolio-section">
-        {/* <Heading as="h1" size="lg">
-          Hello There!
-        </Heading> */}
         <h1>Hello There!</h1>
         <div className="about-portfolio-container">
           <div className="about-portfolio-profile-pic">

@@ -8,6 +8,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import customTheme from "./themes/theme";
 import { useState } from "react";
 import KeyItems from "./Components/KeyItems/KeyItems";
+import { ThemeProvider } from "./Context/toggleContext";
 
 function App() {
   const [showComponent, setShowComponent] = useState("MainInformation");
@@ -16,6 +17,7 @@ function App() {
     setShowComponent(componentName);
   };
   return (
+    <ThemeProvider>
     <ChakraProvider theme={customTheme}>
       <div className="App">
         <NavBar onNavItemClick={selectedLink} />
@@ -29,7 +31,8 @@ function App() {
           {showComponent === "Inventory" && <KeyItems />}
         </div>
       </div>
-    </ChakraProvider>
+      </ChakraProvider>
+      </ThemeProvider>
   );
 }
 

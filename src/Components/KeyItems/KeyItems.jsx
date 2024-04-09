@@ -1,15 +1,13 @@
 import "./KeyItems.css";
 import { Heading } from "@chakra-ui/react";
+import { useTheme } from "../../Context/toggleContext";
 export default function KeyItems() {
+  const { theme } = useTheme();
   return (
     <>
       <div className="key-items-pocket">
         <div className="key-items-heading">
-          <Heading>Inventory</Heading>
-        </div>
-
-        <div className="key-items-equipped-heading">
-          <h2>Currently Equipped</h2>
+          <Heading>{theme === "videoGame" ? "Inventory" : "Skills"}</Heading>
         </div>
         <div className="grouped-languages">
           <h3 className="items-title">FrontEnd</h3>
@@ -190,7 +188,11 @@ export default function KeyItems() {
           </div>
         </div>
         <div className="grouped-languages">
-          <h3 className="items-title">Key Items</h3>
+          <h3 className="items-title">
+            {theme === "videoGame"
+              ? "Key Items"
+              : "Development/Productivity Tools"}
+          </h3>
           <div className="equipped-languages">
             <div className="icon-container">
               <svg
@@ -237,7 +239,7 @@ export default function KeyItems() {
           </div>
         </div>
         <div className="grouped-languages">
-          <h3 className="items-title">Trial Tools</h3>
+          <h3 className="items-title">{theme === 'videoGame' ? 'Trial Tools' : 'Testing Libraries'}</h3>
           <div className="equipped-languages">
             <div className="icon-container">
               <svg
@@ -257,7 +259,7 @@ export default function KeyItems() {
         </div>
 
         <div className="grouped-languages">
-          <h3 className="items-title">In Training</h3>
+          <h3 className="items-title">{theme === 'videoGame' ? 'In Training' : 'Currently Learning'}</h3>
           <div className="equipped-languages">
             <div className="icon-container">
               <svg
@@ -315,6 +317,11 @@ export default function KeyItems() {
                 <p>GraphQL</p>
               </div>
             </div>
+          </div>
+          <div className='other-tools-no-icons'>
+            <p>Some other tools I am familiar with include: 
+              Firebase, Vite, Supabase
+            </p>
           </div>
         </div>
       </div>
