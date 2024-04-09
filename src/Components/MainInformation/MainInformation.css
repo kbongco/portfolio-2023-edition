@@ -12,10 +12,20 @@
   list-style: none;
 }
 
+.currently-equipped-icons {
+  margin-top: 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .main-information-portfolio {
     height: auto;
   }
+}
+
+.currently-equipped-icons {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 1rem;
 }
 
 .special-abilities-container, .hobbies-and-fun-container, .currently-equipped-container {
