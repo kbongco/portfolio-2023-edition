@@ -29,7 +29,7 @@ export default function MainInformation() {
                 : "Software Engineer 3yrs Exp"}
             </p>
             <Progress value={80} height="24px" rounded="full" />
-            <p className="next-level">To Next Level - 1</p>
+            <p className="next-level">{theme === 'videoGame' ? 'To Next Level - 1' : ''}</p>
           </div>
           <div className="progress-level-container">
             <p>
@@ -38,7 +38,7 @@ export default function MainInformation() {
                 : "Front End Engineer 3yrs Exp"}
             </p>
             <Progress value={80} height="24px" rounded="full" />
-            <p className="next-level">To Next Level - 1</p>
+            <p className="next-level">{theme === 'videoGame' ? 'To Next Level - 1' : ''}</p>
           </div>
         </div>
         <div className="main-information-special-skills-container">
