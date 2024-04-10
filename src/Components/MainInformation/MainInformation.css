@@ -36,6 +36,11 @@
     display: flex;
     gap: 1rem;
   }
+
+  .first-row-icons-container {
+    display: flex;
+    gap: 1rem;
+  }
   
 }
 
