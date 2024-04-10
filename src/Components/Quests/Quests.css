@@ -48,6 +48,12 @@
   gap: 0.5rem;
 }
 
+.sideproject-link {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
 .active-link {
   text-decoration: underline;
 }

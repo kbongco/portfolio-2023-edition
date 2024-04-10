@@ -171,7 +171,12 @@ export default function Quests() {
                 />
                 <div className="quests-text">
                   <h3>Creatine Reminder 4 U</h3>
-                  <p>Github | Figma Design</p>
+                  <ul className='sideproject-link'>
+                    <a href='https://github.com/kbongco/creatine-reminder-4-u'><li>Github</li></a>
+                    <li>|</li>
+                    <a href='https://www.figma.com/file/NCtEjwv3iuBJe10fH3TI6K/CreatineReminder4u?type=design&node-id=0%3A1&mode=design&t=iB4gxz2AwoVzT4eF-1'><li>Figma</li>
+                    </a>
+                  </ul>
                   <p>
                     A mobile first Progressive Web application which users can
                     track their Creatine Intake, get reminders to take their
@@ -197,7 +202,11 @@ export default function Quests() {
                 />
                 <div className="quests-text">
                   <h3>WeebTrade</h3>
-                  <p>Github | Figma</p>
+                  <ul className='sideproject-link'>
+                    <a href='https://github.com/kbongco/WeebTrade'><li>Github</li></a>
+                    <li>|</li>
+                    <a href='https://www.figma.com/file/pJFbA67zKc0XxbFYwv5p3J/WeebTrades?type=design&node-id=0%3A1&mode=design&t=BuEEcaeifPYqK8fP-1'><li>Figma</li></a>
+                  </ul>
                   <p>
                     A mobile first e-commerce web application with a modern UI
                     look where users can trade anime figures.
@@ -221,7 +230,11 @@ export default function Quests() {
                 />
                 <div className="quests-text">
                   <h3>Portfolio Site</h3>
-                  <p>Github | Figma</p>
+                  <ul className='sideproject-link'>
+                    <li>Github</li>
+                    <li>|</li>
+                    <a href='https://www.figma.com/file/pFH0haDm5oDzAAbdjLETZM/Untitled?type=design&node-id=241%3A44&mode=design&t=p5Y1JQRQjDGHXODa-1'><li>Figma</li></a>
+                  </ul>
                   <p>
                     My portfolio site is also an ongoing side project. This
                     rendition is my 7th edition of my portfolio site. Updated to
