@@ -5,11 +5,14 @@
   background-color: #03083A;
   border: 5px solid white;
   color: white;
+  border-radius: 10px;
 }
 
 .social-header {
-  text-align: center;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
+
 
 .social-icons {
   height: 50px;
@@ -24,7 +27,7 @@
 }
 
 .contact-text {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .progress-level-container {
@@ -40,5 +43,5 @@
 .social-links-icon-container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }

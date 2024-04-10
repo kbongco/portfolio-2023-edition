@@ -22,10 +22,13 @@
   margin-right: 0.5rem;
 }
 
+.portfolio-menu-item:hover {
+  cursor: pointer;
+}
+
 .portfolio-nav {
     display: flex;
     align-items: center;
-    margin-left: 0.5rem;
 }
 
 .switch-container {
@@ -54,6 +57,7 @@
 
   .portfolio-nav {
     width: auto;
+    margin-left: 0.5rem;
   }
 
 }
