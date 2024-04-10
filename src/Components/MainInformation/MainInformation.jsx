@@ -11,38 +11,49 @@ export default function MainInformation() {
           {theme === "videoGame" ? "Basic Stats" : "About"}
         </h1>
         <div className="main-information-container">
-          <div className="progress-level-container">
-            <p>
-              {theme === "videoGame"
-                ? "Main Class - Software Engineer Lvl 3"
-                : "Software Engineer 3yrs Exp"}
-            </p>
-            <Progress value={80} height="24px" rounded="full" />
-            <p className="next-level">
-              {theme === "videoGame" ? "To Next Level - 1" : ""}
-            </p>
-          </div>
-          <div className="progress-level-container">
-            <p>
-              {theme === "videoGame"
-                ? "Secondary Class - Front End Engineer Lvl 3"
-                : "Front End Engineer 3yrs Exp"}
-            </p>
-            <Progress value={80} height="24px" rounded="full" />
-            <p className="next-level">
-              {theme === "videoGame" ? "To Next Level - 1" : ""}
-            </p>
-          </div>
+          {theme === "videoGame" ? (
+            <>
+              {" "}
+              <div className="progress-level-container">
+                <p>
+                  Main Class - Software Engineer Lvl 3
+                </p>
+                <Progress value={80} height="24px" rounded="full" />
+                <p className="next-level">
+                  To Next Level - 1
+                </p>
+              </div>
+              <div className="progress-level-container">
+                <p>
+                  Secondary Class - Front End Enginer Lvl 3
+                </p>
+                <Progress value={80} height="24px" rounded="full" />
+                <p className="next-level">
+                  To Next Level - 1
+                </p>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="years-of-experience-container">
+                <h1>Software Engineer</h1>
+                <p className='years-of-exp'>
+                  3 years of experience working with Javascript and its
+                  frameworks. I have experience working with React, Angular, and am currently expanding my knowledge in the front end by learning Next.js and am also dabbling with Vue. I also have knowledge with Python and its microframework, Flask as well as Ruby and Rails.
+                </p>
+              </div>
+            </>
+          )}
         </div>
         <div className="main-information-special-skills-container">
           <div className="special-abilities-container">
             <h1 as="h2" size="lg">
-              {theme === "videoGame" ? "Summary" : "About"}
+              {theme === "videoGame" ? "Summary" : "General Information"}
             </h1>
             <p>
               {theme === "videoGame"
-                ? " Former class was food scientist later became a coding bootcamp graduate. Able to learn things extremely quickly. Also has knowledge of design and UX and is capable of doing full stack and backend development."
-                : " I am a coding bootcamp graduate. Prior to this I was a food scientist that worked in R&D.  During my time at coding bootcamp I learned full stack javascript! I also have knowledge of design and UX as it is something that I hope to gain more experience in. In addition to this, despite front end being more of my speciality I am also capable of doing full stack and back end development!"}
+                ? " Former food scientist developing new products, prior to switching classes through a training camp to software Engineer class. Able to learn things extremely quickly and loves expanding their skill set, and has basic knowledge of UI/UX and is currently leveling up that skill tree. Speciality is front end, but is capable of working the back end and full stack.  "
+                : " I'm a former food scientist who worked in R&D before I attended a coding bootcamp during the height of the COVID pandemic. I pride myself in the ability to learn things very quickly and my curiosity and desire to learn new things. Most of my experience is in front end development, but I am capable of working the backend and working across the stack in full stack. In addition to this, I am improving my UI/UX design skills and have basic knowledge in that field."}
             </p>
           </div>
           <div className="hobbies-and-fun-container">
@@ -72,7 +83,7 @@ export default function MainInformation() {
               {theme === "videoGame"
                 ? "Currently Equipped Items"
                 : "Current Stack "}
-          </h1>
+            </h1>
             <div classname="learn-more">
               <p>
                 {theme === "videoGame"

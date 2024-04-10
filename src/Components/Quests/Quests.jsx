@@ -27,7 +27,8 @@ export default function Quests() {
         <div className="sideproject-switch">
           {theme === "videoGame" ? (
             <ul className="quest-list">
-              <li className='quest-link'
+              <li
+                className="quest-link"
                 onClick={() => handleContentChange("quests")}
                 className={`quest-item ${
                   activeContent === "quests" ? "active-link" : ""
@@ -36,7 +37,8 @@ export default function Quests() {
                 Quests
               </li>
               <li>|</li>
-              <li className='quest-link'
+              <li
+                className="quest-link"
                 onClick={() => handleContentChange("sideQuests")}
                 className={`quest-item ${
                   activeContent === "sideQuests" ? "active-link" : ""
@@ -48,7 +50,8 @@ export default function Quests() {
           ) : (
             <>
               <ul className="quest-list">
-                <li className='quest-link'
+                <li
+                  className="quest-link"
                   onClick={() => handleContentChange("quests")}
                   className={`quest-item ${
                     activeContent === "quests" ? "active-link" : ""
@@ -57,7 +60,8 @@ export default function Quests() {
                   Professional
                 </li>
                 <li>|</li>
-                <li className='quest-link'
+                <li
+                  className="quest-link"
                   onClick={() => handleContentChange("sideQuests")}
                   className={`quest-item ${
                     activeContent === "sideQuests" ? "active-link" : ""
@@ -149,8 +153,8 @@ export default function Quests() {
             <div className="learn-more">
               <p className="check-out-linked-in">
                 {theme === "videoGame"
-                  ? "If you are interested in seeing more of my completed quests, check out my linkedin!"
-                  : "If you would like to see more of my professional experience, check out my linkedin!"}
+                  ? "If you are interested in seeing more of my completed quests and the details of it check out my linkedin!"
+                  : "If you would like to see more of my professional experience, as well as a more detailed description of it, check out my linkedin!"}
               </p>
             </div>
           </>
@@ -167,10 +171,13 @@ export default function Quests() {
                 />
                 <div className="quests-text">
                   <h3>Creatine Reminder 4 U</h3>
-                  <ul className='sideproject-link'>
-                    <a href='https://github.com/kbongco/creatine-reminder-4-u'><li>Github</li></a>
+                  <ul className="sideproject-link">
+                    <a href="https://github.com/kbongco/creatine-reminder-4-u">
+                      <li>Github</li>
+                    </a>
                     <li>|</li>
-                    <a href='https://www.figma.com/file/NCtEjwv3iuBJe10fH3TI6K/CreatineReminder4u?type=design&node-id=0%3A1&mode=design&t=iB4gxz2AwoVzT4eF-1'><li>Figma</li>
+                    <a href="https://www.figma.com/file/NCtEjwv3iuBJe10fH3TI6K/CreatineReminder4u?type=design&node-id=0%3A1&mode=design&t=iB4gxz2AwoVzT4eF-1">
+                      <li>Figma</li>
                     </a>
                   </ul>
                   <p>
@@ -198,10 +205,14 @@ export default function Quests() {
                 />
                 <div className="quests-text">
                   <h3>WeebTrade</h3>
-                  <ul className='sideproject-link'>
-                    <a href='https://github.com/kbongco/WeebTrade'><li>Github</li></a>
+                  <ul className="sideproject-link">
+                    <a href="https://github.com/kbongco/WeebTrade">
+                      <li>Github</li>
+                    </a>
                     <li>|</li>
-                    <a href='https://www.figma.com/file/pJFbA67zKc0XxbFYwv5p3J/WeebTrades?type=design&node-id=0%3A1&mode=design&t=BuEEcaeifPYqK8fP-1'><li>Figma</li></a>
+                    <a href="https://www.figma.com/file/pJFbA67zKc0XxbFYwv5p3J/WeebTrades?type=design&node-id=0%3A1&mode=design&t=BuEEcaeifPYqK8fP-1">
+                      <li>Figma</li>
+                    </a>
                   </ul>
                   <p>
                     A mobile first e-commerce web application with a modern UI
@@ -220,16 +231,18 @@ export default function Quests() {
               <div className="quests-picture">
                 <img
                   className="quest-company"
-                  src="https://i.ibb.co/LnB5q68/Screen-Shot-2024-04-02-at-11-39-49-AM.png"
-                  alt="Screen-Shot-2024-04-02-at-11-39-49-AM"
+                  src="https://i.ibb.co/khwKG5w/Screen-Shot-2024-04-10-at-12-51-21-PM.png"
+                  alt="Portfolio-site"
                   border="0"
                 />
                 <div className="quests-text">
                   <h3>Portfolio Site</h3>
-                  <ul className='sideproject-link'>
+                  <ul className="sideproject-link">
                     <li>Github</li>
                     <li>|</li>
-                    <a href='https://www.figma.com/file/pFH0haDm5oDzAAbdjLETZM/Untitled?type=design&node-id=241%3A44&mode=design&t=p5Y1JQRQjDGHXODa-1'><li>Figma</li></a>
+                    <a href="https://www.figma.com/file/pFH0haDm5oDzAAbdjLETZM/Untitled?type=design&node-id=241%3A44&mode=design&t=p5Y1JQRQjDGHXODa-1">
+                      <li>Figma</li>
+                    </a>
                   </ul>
                   <p>
                     My portfolio site is also an ongoing side project. This
