@@ -152,8 +152,6 @@ export default function Quests() {
                 {theme === "videoGame"
                   ? "If you are interested in seeing more of my completed quests, check out my linkedin!"
                   : "If you would like to see more of my professional experience, check out my linkedin!"}
-                {/* If you are interested in seeing more of my completed Quests,
-                check out my linkedIn! */}
               </p>
             </div>
           </>
