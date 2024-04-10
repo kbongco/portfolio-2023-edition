@@ -1,5 +1,4 @@
 import "./MainInformation.css";
-import { Heading } from "@chakra-ui/react";
 import { Progress } from "@chakra-ui/react";
 import { useTheme } from "../../Context/toggleContext";
 
@@ -8,9 +7,9 @@ export default function MainInformation() {
   return (
     <>
       <section className="main-information-portfolio">
-        <Heading as="h1" size="lg" className="main-information-header">
+        <h1 className="main-information-header">
           {theme === "videoGame" ? "Basic Stats" : "About"}
-        </Heading>
+        </h1>
         <div className="main-information-container">
           <div className="progress-level-container">
             <p>
@@ -37,9 +36,9 @@ export default function MainInformation() {
         </div>
         <div className="main-information-special-skills-container">
           <div className="special-abilities-container">
-            <Heading as="h2" size="lg">
+            <h1 as="h2" size="lg">
               {theme === "videoGame" ? "Summary" : "About"}
-            </Heading>
+            </h1>
             <p>
               {theme === "videoGame"
                 ? " Former class was food scientist later became a coding bootcamp graduate. Able to learn things extremely quickly. Also has knowledge of design and UX and is capable of doing full stack and backend development."
@@ -47,9 +46,9 @@ export default function MainInformation() {
             </p>
           </div>
           <div className="hobbies-and-fun-container">
-            <Heading as="h2" size="lg">
+            <h1 as="h2" size="lg">
               Hobbies and Fun Things
-            </Heading>
+            </h1>
             <div className="hobbies-list">
               <ul className="hobbies">
                 <li>
@@ -69,11 +68,11 @@ export default function MainInformation() {
             </div>
           </div>
           <div className="currently-equipped-container">
-            <Heading as="h2" size="lg">
+            <h1 as="h2" size="lg">
               {theme === "videoGame"
                 ? "Currently Equipped Items"
                 : "Current Stack "}
-            </Heading>
+          </h1>
             <div classname="learn-more">
               <p>
                 {theme === "videoGame"
