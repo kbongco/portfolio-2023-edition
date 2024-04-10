@@ -37,9 +37,12 @@
 
 .sideproject-switch {
   display: flex;
-    /* list-style: none; */
     justify-content: end;
     margin-right: 1rem;
+}
+
+.quest-link:hover {
+  cursor: pointer;
 }
 
 .quest-list {

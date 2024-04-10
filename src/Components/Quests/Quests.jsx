@@ -29,7 +29,7 @@ export default function Quests() {
         <div className="sideproject-switch">
           {theme === "videoGame" ? (
             <ul className="quest-list">
-              <li
+              <li className='quest-link'
                 onClick={() => handleContentChange("quests")}
                 className={`quest-item ${
                   activeContent === "quests" ? "active-link" : ""
@@ -38,7 +38,7 @@ export default function Quests() {
                 Quests
               </li>
               <li>|</li>
-              <li
+              <li className='quest-link'
                 onClick={() => handleContentChange("sideQuests")}
                 className={`quest-item ${
                   activeContent === "sideQuests" ? "active-link" : ""
@@ -50,7 +50,7 @@ export default function Quests() {
           ) : (
             <>
               <ul className="quest-list">
-                <li
+                <li className='quest-link'
                   onClick={() => handleContentChange("quests")}
                   className={`quest-item ${
                     activeContent === "quests" ? "active-link" : ""
@@ -59,7 +59,7 @@ export default function Quests() {
                   Professional
                 </li>
                 <li>|</li>
-                <li
+                <li className='quest-link'
                   onClick={() => handleContentChange("sideQuests")}
                   className={`quest-item ${
                     activeContent === "sideQuests" ? "active-link" : ""
