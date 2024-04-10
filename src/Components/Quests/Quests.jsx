@@ -86,7 +86,7 @@ export default function Quests() {
                 <div className="quests-text">
                   <h3>UX Engineer @ EY Design Studio</h3>
                   <p>February 2022 - March 2023</p>
-                  <p>
+                  <p className='quests-text-desc'>
                     Supported the redesign of client's internal site to Angular
                     sites. Ensuring accessibility, user friendliness, and
                     responsiveness.{" "}
@@ -109,9 +109,9 @@ export default function Quests() {
                   border="0"
                 />
                 <div className="quests-text">
-                  <h3>Junior Software Developer @ Verizon via Infovision</h3>
+                  <h3 className='vz-text'>Junior Software Developer @ Verizon via Infovision</h3>
                   <p>March 2021 - February 2022</p>
-                  <p>
+                  <p className='quests-text-desc'>
                     Supported the redesign of current customer features
                     converting legacy react code to hooks. Supported QA with
                     ensuring all tickets were ready for deployment prior to
@@ -137,9 +137,9 @@ export default function Quests() {
                 <div className="quests-text">
                   <h3>Software Engineer Fellow @ General Assembly</h3>
                   <p>June 2020 - September 2020</p>
-                  <p>
+                  <p className='quests-text-desc'>
                     Attended a 12 week immersive bootcamp, learning full stack
-                    web development with Javascript. Created several projects
+                    web development with Javascript. Created several projects, including an Etsy clone themed to Animal Crossing as well as a project collaborating with the UX cohort.
                   </p>
                 </div>
               </div>
@@ -180,7 +180,7 @@ export default function Quests() {
                       <li>Figma</li>
                     </a>
                   </ul>
-                  <p>
+                  <p className='quests-text-desc'>
                     A mobile first Progressive Web application which users can
                     track their Creatine Intake, get reminders to take their
                     Creatine and track how much Creatine they have left before
@@ -214,7 +214,7 @@ export default function Quests() {
                       <li>Figma</li>
                     </a>
                   </ul>
-                  <p>
+                  <p className='quests-text-desc'>
                     A mobile first e-commerce web application with a modern UI
                     look where users can trade anime figures.
                   </p>
@@ -244,7 +244,7 @@ export default function Quests() {
                       <li>Figma</li>
                     </a>
                   </ul>
-                  <p>
+                  <p className='quests-text-desc'>
                     My portfolio site is also an ongoing side project. This
                     rendition is my 7th edition of my portfolio site. Updated to
                     have a little bit more of a unique look compared to others.

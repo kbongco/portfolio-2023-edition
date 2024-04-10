@@ -25,8 +25,16 @@
   align-items: center;
 }
 
+.vz-text {
+  padding-right: 0.5rem;
+}
+
 .experience-gained {
   padding: 1rem;
+}
+
+.quests-text-desc {
+  padding-right: 0.5rem;
 }
 
 .quests-header {
@@ -63,6 +71,7 @@
 
 .check-out-linked-in {
   margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px){
