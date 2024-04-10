@@ -38,7 +38,7 @@
 .sideproject-switch {
   display: flex;
     justify-content: end;
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .quest-link:hover {
@@ -59,6 +59,10 @@
 
 .active-link {
   text-decoration: underline;
+}
+
+.check-out-linked-in {
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 768px){

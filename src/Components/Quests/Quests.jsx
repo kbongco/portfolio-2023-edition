@@ -2,7 +2,6 @@ import "./Quests.css";
 import { Heading } from "@chakra-ui/react";
 import { useState } from "react";
 import { useTheme } from "../../Context/toggleContext";
-import { useContext } from "react";
 
 export default function Quests() {
   const [activeContent, setActiveContent] = useState("quests");
