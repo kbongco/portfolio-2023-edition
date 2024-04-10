@@ -22,6 +22,10 @@
   margin-right: 0.5rem;
 }
 
+.portfolio-menu-item:hover {
+  cursor: pointer;
+}
+
 .portfolio-nav {
     display: flex;
     align-items: center;

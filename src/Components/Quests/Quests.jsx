@@ -1,5 +1,4 @@
 import "./Quests.css";
-import { Heading } from "@chakra-ui/react";
 import { useState } from "react";
 import { useTheme } from "../../Context/toggleContext";
 
@@ -14,7 +13,7 @@ export default function Quests() {
   return (
     <>
       <div className="quests-information">
-        <Heading as="h1" size="lg" className="quests-header">
+        <h1 as="h1" size="lg" className="quests-header">
           {activeContent === "quests" && theme === "videoGame"
             ? "Quests"
             : activeContent === "quests" && theme === "professional"
@@ -24,7 +23,7 @@ export default function Quests() {
             : activeContent === "sideQuests" && theme === "professional"
             ? "Side Projects"
             : ""}
-        </Heading>
+        </h1>
         <div className="sideproject-switch">
           {theme === "videoGame" ? (
             <ul className="quest-list">

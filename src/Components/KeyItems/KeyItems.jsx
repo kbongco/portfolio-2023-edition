@@ -7,7 +7,7 @@ export default function KeyItems() {
     <>
       <div className="key-items-pocket">
         <div className="key-items-heading">
-          <Heading>{theme === "videoGame" ? "Inventory" : "Skills"}</Heading>
+          <h1>{theme === "videoGame" ? "Inventory" : "Skills"}</h1>
         </div>
         <div className="grouped-languages">
           <h3 className="items-title">FrontEnd</h3>
