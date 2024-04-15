@@ -53,6 +53,14 @@
   cursor: pointer;
 }
 
+.quests-text-desc {
+  max-width: 60ch;
+}
+
+.check-out-linked-in {
+  max-width: 60ch;
+}
+
 .quest-list {
   display: flex;
   list-style: none;

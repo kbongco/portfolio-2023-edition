@@ -41,6 +41,12 @@
   padding-right: 0.5rem;
 }
 
+.special-abilities-text, .learn-more-text {
+  max-width: 70ch;
+}
+
+
+
 @media screen and (min-width: 768px) {
   .main-information-portfolio {
     height: auto;

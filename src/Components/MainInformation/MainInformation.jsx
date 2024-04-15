@@ -50,7 +50,7 @@ export default function MainInformation() {
             <h1 as="h2" size="lg">
               {theme === "videoGame" ? "Summary" : "General Information"}
             </h1>
-            <p>
+            <p className='special-abilities-text'>
               {theme === "videoGame"
                 ? " Former food scientist developing new products, prior to switching classes through a training camp to software Engineer class. Able to learn things extremely quickly and loves expanding their skill set, and has basic knowledge of UI/UX and is currently leveling up that skill tree. Speciality is front end, but is capable of working the back end and full stack.  "
                 : " I'm a former food scientist who worked in R&D before I attended a coding bootcamp during the height of the COVID pandemic. I pride myself in the ability to learn things very quickly and my curiosity and desire to learn new things. Most of my experience is in front end development, but I am capable of working the backend and working across the stack in full stack. In addition to this, I am improving my UI/UX design skills and have basic knowledge in that field."}
@@ -85,7 +85,7 @@ export default function MainInformation() {
                 : "Current Stack "}
             </h1>
             <div classname="learn-more">
-              <p>
+              <p className='learn-more-text'>
                 {theme === "videoGame"
                   ? "This is what I have currently equipped when I go on my quests. If you are interested in seeing more of whats in my kit, click the inventory link above!"
                   : "This is my current go-to stack when I am building projects. Most of the things I am working on right now is front end, but i am capable of back end development as well. Click the tools link to check out what else I know!"}
