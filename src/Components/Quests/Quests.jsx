@@ -165,58 +165,62 @@ export default function Quests() {
               <div className="quests-picture">
                 <img
                   className="quest-company"
-                  src="https://i.ibb.co/3y0vQPD/Screen-Shot-2023-12-25-at-3-21-16-PM.png"
+                  src="https://i.ibb.co/1GwjghST/Screen-Shot-2025-02-20-at-11-14-34-AM.png"
                   alt="Screen-Shot-2024-03-31-at-2-34-19-PM"
                   border="0"
                 />
                 <div className="quests-text">
-                  <h3>Creatine Reminder 4 U</h3>
+                  <h3>Chibi Components: A minimal Library</h3>
                   <ul className="sideproject-link">
-                    <a href="https://github.com/kbongco/creatine-reminder-4-u">
+                    <a href="https://github.com/kbongco/minimal-chibi-components">
                       <li>Github</li>
                     </a>
                     <li>|</li>
-                    <a href="https://www.figma.com/file/NCtEjwv3iuBJe10fH3TI6K/CreatineReminder4u?type=design&node-id=0%3A1&mode=design&t=iB4gxz2AwoVzT4eF-1">
+                    <a href="https://www.figma.com/design/vtcrSI7QOkmbitexzF42qO/Chibi-Components?node-id=0-1&t=z4PV1kWsPBY4TGyI-1">
                       <li>Figma</li>
+                    </a>
+                    <li>|</li>
+                    <a href="">
+                      NPM Library Coming Soon!
                     </a>
                   </ul>
                   <p className='quests-text-desc'>
-                    A mobile first Progressive Web application which users can
-                    track their Creatine Intake, get reminders to take their
-                    Creatine and track how much Creatine they have left before
-                    having to order
+                    A minimalist component library I'm creating, to use across various projects of mine. With an NPM library coming soon! 
                   </p>
                 </div>
               </div>
             </div>
             <div className="experience-gained">
               <p>
-                Experience Gained in: React, Figma, Creating components, SCSS,
-                Firebase, Progressive Web applications
+                Experience Gained in: React, Figma, Creating components, SCSS, Styled Components
               </p>
             </div>
             <div className="quests-information-container">
               <div className="quests-picture">
                 <img
                   className="quest-company"
-                  src="https://i.ibb.co/FgWNtPs/Screen-Shot-2024-04-02-at-11-39-17-AM.png"
+                  src="https://i.ibb.co/FkFkNHvm/Screen-Shot-2025-02-20-at-11-27-46-AM.png"
                   alt="Screen-Shot-2024-04-02-at-11-39-17-AM"
                   border="0"
                 />
                 <div className="quests-text">
-                  <h3>WeebTrade</h3>
+                  <h3>Japan 2024 Recapped</h3>
                   <ul className="sideproject-link">
-                    <a href="https://github.com/kbongco/WeebTrade">
+                    <a href="https://github.com/kbongco/japan2024trip">
                       <li>Github</li>
                     </a>
                     <li>|</li>
-                    <a href="https://www.figma.com/file/pJFbA67zKc0XxbFYwv5p3J/WeebTrades?type=design&node-id=0%3A1&mode=design&t=BuEEcaeifPYqK8fP-1">
+                    <a href="">
                       <li>Figma</li>
+                    </a>
+                    <li>|</li>
+                    <a href=''>
+                      Deployed Site Coming Soon!
                     </a>
                   </ul>
                   <p className='quests-text-desc'>
-                    A mobile first e-commerce web application with a modern UI
-                    look where users can trade anime figures.
+                    A fun project I created that recaps my trip to Japan showing off how much I spent, in the style of a 
+                    "Spotify" wrapped page
                   </p>
                 </div>
               </div>
@@ -224,7 +228,7 @@ export default function Quests() {
             <div className="experience-gained">
               <p>
                 Experience Gained in: React, Typescript, SCSS, Creating
-                Component, Ruby, Rails, Supabase
+                Components
               </p>
             </div>
             <div className="quests-information-container">
