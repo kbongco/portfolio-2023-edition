@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+// * {
+//   background-color: #050d12;
+// }
+.remake-panel {
+  background: $panel-bg-gradient;
+  backdrop-filter: blur($blur-panel);
+  border: 1px solid $panel-border;
+  box-shadow: $panel-shadow;
+  clip-path: $cut-br;
+}
+h1.hero-name {
+  font-family: $font-heading;
+  font-size: $text-hero;
+  letter-spacing: $tracking-hero;
+  text-shadow: $glow-teal-text;
+  color: $color-text;
+}
+.stat-bar-fill--hp {
+  background: $bar-hp-gradient;
+  box-shadow: 0 0 10px $bar-hp-glow;
+  transition: width $anim-bar-fill;
+}
+.materia-orb--magic {
+  color: $materia-magic;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8) 0%, currentColor 40%, rgba(0,0,0,0.8) 100%);
+}

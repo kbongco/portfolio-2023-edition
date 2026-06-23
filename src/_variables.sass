@@ -1,0 +1,122 @@
+$color-bg:           #050d12;   // Page / deepest background
+$color-dark-1:       #07131e;   // Panel gradient start
+$color-dark-2:       #102638;   // Panel gradient end
+
+$color-teal:         #00d4e8;   // Primary accent — bars, borders, active states
+$color-teal-mid:     #0088aa;   // HP bar gradient start
+$color-teal-dim:     rgba(0, 212, 232, 0.20);  // Low-opacity fills
+$color-teal-glow:    rgba(0, 212, 232, 0.60);  // Text shadow / glow
+$color-teal-border:  rgba(0, 212, 232, 0.30);  // Panel borders
+$color-teal-inner:   rgba(0, 212, 232, 0.10);  // Subtle inner glow
+$color-teal-faint:   rgba(0, 212, 232, 0.05);  // Near-invisible inset
+
+$color-blue:         #0088ff;   // MP bar highlight
+$color-blue-deep:    #0055aa;   // MP bar gradient start
+
+$color-magenta:      #e040c0;   // Secondary accent — Sidequests, Limit Break
+$color-magenta-deep: #880055;   // Limit bar gradient start
+$color-magenta-glow: rgba(224, 64, 192, 0.60);
+$color-magenta-dim:  rgba(224, 64, 192, 0.20);
+$color-magenta-border: rgba(224, 64, 192, 0.40);
+
+$color-text:         #f0f8ff;   // Primary text — near white
+$color-text-muted:   #94a3b8;   // Secondary / labels / placeholders
+
+$panel-bg:           rgba(5, 13, 18, 0.65);
+$panel-bg-gradient:  linear-gradient(135deg, rgba(0, 50, 70, 0.40) 0%, rgba(5, 13, 18, 0.80) 100%);
+$panel-border:       $color-teal-border;
+$panel-shadow:
+  0 0 15px rgba(0, 212, 232, 0.10), inset 0 0 20px rgba(0, 212, 232, 0.05);
+
+$bar-bg:             rgba(0, 0, 0, 0.50);
+$bar-border:         rgba(0, 212, 232, 0.20);
+
+$bar-hp-gradient:    linear-gradient(90deg, $color-teal-mid, $color-teal);
+$bar-hp-glow:        rgba(0, 212, 232, 0.50);
+
+$bar-mp-gradient:    linear-gradient(90deg, $color-blue-deep, $color-blue);
+$bar-mp-glow:        rgba(0, 136, 255, 0.50);
+
+$bar-limit-gradient: linear-gradient(90deg, $color-magenta-deep, $color-magenta);
+$bar-limit-glow:     rgba(224, 64, 192, 0.50);
+
+
+$materia-magic:      #22dd22;   // Green
+$materia-command:    #ddaa22;   // Yellow / gold
+$materia-support:    #22aadd;   // Blue
+$materia-independent:#aa22dd;   // Purple
+$materia-summon:     #dd2222;   // Red
+
+
+$font-heading:       'Rajdhani', sans-serif;      // Section titles, names, nav labels
+$font-mono:          'Share Tech Mono', monospace; // Stats, values, badges, data
+
+// Scale
+$text-hero:          clamp(3rem, 8vw, 6rem);   // CLOUD STRIFE
+$text-section:       clamp(1.75rem, 4vw, 3rem); // Section headers
+$text-card-title:    1.25rem;
+$text-body:          0.9375rem;
+$text-label:         0.75rem;
+$text-badge:         0.625rem;
+
+// Letter spacing
+$tracking-hero:      0.10em;
+$tracking-section:   0.20em;
+$tracking-label:     0.20em;
+$tracking-badge:     0.15em;
+
+$cut-size:           16px;   // Corner clip size for all panels
+
+$cut-br:  polygon(
+  0 0,
+  100% 0,
+  100% calc(100% - #{$cut-size}),
+  calc(100% - #{$cut-size}) 100%,
+  0 100%
+); // Bottom-right cut
+
+$cut-tl: polygon(
+  #{$cut-size} 0,
+  100% 0,
+  100% 100%,
+  0 100%,
+  0 #{$cut-size}
+); // Top-left cut
+
+$cut-both: polygon(
+  #{$cut-size} 0,
+  100% 0,
+  100% calc(100% - #{$cut-size}),
+  calc(100% - #{$cut-size}) 100%,
+  0 100%,
+  0 #{$cut-size}
+); // Both corners cut
+
+
+$blur-panel:         12px;   // backdrop-filter: blur
+
+$glow-teal-text:     0 0 8px $color-teal-glow;
+$glow-magenta-text:  0 0 8px $color-magenta-glow;
+
+$skew-atb:           skewX(-15deg);   // ATB bar parallelogram skew
+
+
+$anim-bar-fill:      1s ease-out;   // Stat bar fill on load
+$anim-pulse-period:  2s;            // Panel glow pulse cycle
+$anim-scan-period:   4s;            // Scan line sweep
+$anim-ping-period:   3s;            // Save Point concentric ring
+
+
+
+$mobile-max-w:       390px;
+$mobile-min-h:       844px;
+$desktop-max-w:      64rem;    // max-w-5xl equivalent
+
+$section-gap:        4rem;     // vertical gap between sections
+$card-gap:           1.5rem;   // gap inside card grids
+$tab-bar-height:     4rem;     // mobile bottom tab bar
+
+
+$z-bg:               0;
+$z-content:          10;
+$z-overlay:          50;   // scan line, tab bar
