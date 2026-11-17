@@ -22,19 +22,8 @@
   margin-left: 0.5rem;
 }
 
-.second-row-container {
-  display: flex;
-  gap: 2rem;
-}
-
 .years-of-experience-container {
   margin-left: 0.5rem;
-}
-
-
-.first-row-icons-container {
-  display: flex;
-  gap: 1rem;
 }
 
 .years-of-exp {
@@ -50,16 +39,6 @@
 @media screen and (min-width: 768px) {
   .main-information-portfolio {
     height: auto;
-  }
-
-  .second-row-container {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .first-row-icons-container {
-    display: flex;
-    gap: 1rem;
   }
   
 }
