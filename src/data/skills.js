@@ -1,28 +1,25 @@
 // Skill groupings. Each entry in `items` must be a key in skillIcons.js.
-// `title` holds the heading for each theme.
+// Each group's heading (per theme) is in copy.js under inventory.groups[id].
 
 export const skillGroups = [
   {
-    title: { videoGame: "FrontEnd", professional: "FrontEnd" },
+    id: "frontend",
     items: ["HTML", "CSS", "Javascript", "Typescript", "React", "Angular"],
   },
   {
-    title: { videoGame: "BackEnd", professional: "BackEnd" },
+    id: "backend",
     items: ["Python", "Node", "Ruby", "Rails", "Express", "Postgres"],
   },
   {
-    title: {
-      videoGame: "Key Items",
-      professional: "Development/Productivity Tools",
-    },
+    id: "tools",
     items: ["Figma", "Jira", "Git"],
   },
   {
-    title: { videoGame: "Trial Tools", professional: "Testing Libraries" },
+    id: "testing",
     items: ["Jasmine"],
   },
   {
-    title: { videoGame: "In Training", professional: "Currently Learning" },
+    id: "learning",
     items: ["Vue.js", "Next.js", "C#", "GraphQL"],
   },
 ];

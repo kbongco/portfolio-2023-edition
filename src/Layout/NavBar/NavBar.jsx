@@ -3,12 +3,12 @@ import { Switch } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import { useTheme } from "../../Context/toggleContext";
-import navLinks from "../../data/navLinks";
+import { useCopy, useTheme } from "../../Context/toggleContext";
 
 export default function NavBar({ onNavItemClick }) {
   const [activeNavItem, setActiveNavItem] = useState("MainInformation");
   const { theme, toggleTheme } = useTheme();
+  const { nav } = useCopy();
 
   const handleNavItemClick = (itemName) => {
     setActiveNavItem(itemName);
@@ -27,7 +27,7 @@ export default function NavBar({ onNavItemClick }) {
         <FontAwesomeIcon icon={faUserTie} />
       </div>
       <div className="portfolio-links-container">
-        {navLinks.map((link) => (
+        {nav.map((link) => (
           <a
             key={link.id}
             className={`portfolio-menu-item ${
@@ -35,7 +35,7 @@ export default function NavBar({ onNavItemClick }) {
             }`}
             onClick={() => handleNavItemClick(link.id)}
           >
-            {link[theme]}
+            {link.label}
           </a>
         ))}
       </div>

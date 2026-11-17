@@ -1,5 +1,5 @@
-// ThemeContext.js
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
+import { copy } from "../data/copy";
 
 const ThemeContext = createContext();
 
@@ -7,7 +7,9 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("videoGame"); // Default theme
 
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'professional' ? 'videoGame' : 'professional');
+    setTheme((prevTheme) =>
+      prevTheme === "professional" ? "videoGame" : "professional"
+    );
   };
 
   return (
@@ -18,3 +20,6 @@ export const ThemeProvider = ({ children }) => {
 };
 
 export const useTheme = () => useContext(ThemeContext);
+
+// The current theme's text from src/data/copy.js.
+export const useCopy = () => copy[useTheme().theme];
