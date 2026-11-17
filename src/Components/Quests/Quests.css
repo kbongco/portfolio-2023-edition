@@ -1,89 +1,52 @@
-.quests-information {
-  width: 85%;
-  margin-top: 16px;
-  height: auto;
-  background-color: #03083a;
-  border: 5px solid white;
-  border-radius: 10px;
-  color: white;
+/* Heading on the left, Quests | Side Quests tabs on the right (wraps on phones). */
+.quests-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.quest-list,
+.sideproject-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.sideproject-link a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .quests-information-container {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  display: flex;
+  margin-top: 1.5rem;
 }
 
-.quest-company {
-  width: auto;
-  height: 87px;
-}
-
+/* Logo beside the text when there's room; above it on narrow screens. */
 .quests-picture {
   display: flex;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
   align-items: center;
 }
 
-.vz-text {
-  padding-right: 0.5rem;
+.quest-company {
+  flex: 0 0 auto;
+  height: clamp(56px, 40px + 4vw, 87px);
+  width: auto;
+}
+
+.quests-text {
+  flex: 1 1 260px;
 }
 
 .experience-gained {
-  padding: 1rem;
-}
-
-.quests-text-desc {
-  padding-right: 0.5rem;
-}
-
-.quests-header {
-  text-align: left;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.sideproject-switch {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 1rem;
-}
-
-.quest-item:hover {
-  cursor: pointer;
-}
-
-.quests-text-desc {
-  max-width: 60ch;
+  margin-top: 0.75rem;
 }
 
 .check-out-linked-in {
-  max-width: 60ch;
-}
-
-.quest-list {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-}
-
-.sideproject-link {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-.active-link {
-  text-decoration: underline;
-}
-
-.check-out-linked-in {
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .quests-information {
-    height: auto;
-  }
+  margin-top: 1.5rem;
 }

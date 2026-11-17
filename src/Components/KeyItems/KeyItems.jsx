@@ -7,7 +7,7 @@ export default function KeyItems() {
   const { inventory } = useCopy();
 
   return (
-    <div className="key-items-pocket">
+    <section className="key-items-pocket panel">
       <div className="key-items-heading">
         <h1>{inventory.heading}</h1>
       </div>
@@ -26,6 +26,6 @@ export default function KeyItems() {
           {inventory.otherTools} {otherTools.join(", ")}
         </p>
       </div>
-    </div>
+    </section>
   );
 }

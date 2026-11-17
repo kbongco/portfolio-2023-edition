@@ -1,36 +1,27 @@
-.about-portfolio-section {
-  width: 85%;
-  margin-top: 16px;
-  background-color: #03083a;
-  border: 5px solid white;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
+/* Photo and intro sit side by side when there's room, and the photo moves
+   above the text when the card is narrow (phones, or the desktop sidebar). */
 .about-portfolio-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
 }
 
 .about-portfolio-img-container {
-  flex: 1;
+  flex: 1 1 120px;
+  max-width: 180px;
+  margin-inline: auto;
+}
+
+.portfolio-pic {
+  display: block;
+  width: 100%;
 }
 
 .about-portfolio-text-container {
-  flex: 2;
+  flex: 999 1 240px;
 }
 
 .about-portfolio-announcement {
-  margin: 1rem;
-}
-
-.about-text,
-.portfolio-announcement-text {
-  line-height: 1.6;
+  margin-top: 1rem;
 }

@@ -1,47 +1,75 @@
-/* src/App.css or another stylesheet */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* ---------- Design tokens ---------- */
+:root {
+  --page-bg: #807f7f;
+  --panel-bg: #03083a;
+  --panel-border: white;
+  --panel-text: white;
+  --panel-radius: 10px;
+  --panel-padding: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+  --gap: clamp(1rem, 0.5rem + 1.5vw, 1.5rem);
+  --max-width: 1200px;
+}
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   font-family: "Playfair Display", serif;
 }
 
+/* ---------- Page layout ---------- */
 .App {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gap) 16px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  gap: var(--gap);
+}
+
+/* One column on phones and tablets; sidebar + main content on desktop. */
+.information-overall {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--gap);
+  align-items: start;
 }
 
 .left-column-desktop {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--gap);
 }
 
-.information-overall {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
+@media (min-width: 900px) {
   .information-overall {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-  }
-
-  .left-column-desktop {
-    width: 55%;
-  }
-
-  .App {
-    display: flex;
-    align-items: initial;
+    grid-template-columns: minmax(300px, 1fr) minmax(0, 2fr);
   }
 }
 
-/* Reset for buttons styled as text links (nav items, quest tabs). */
+/* ---------- Shared card style (every navy box) ---------- */
+.panel {
+  width: 100%;
+  background-color: var(--panel-bg);
+  color: var(--panel-text);
+  border: 5px solid var(--panel-border);
+  border-radius: var(--panel-radius);
+  padding: var(--panel-padding);
+}
+
+/* Readable line length for long paragraphs inside wide cards. */
+.panel p {
+  max-width: 70ch;
+  line-height: 1.6;
+}
+
+/* Images never overflow their card. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Buttons styled as text links (nav items, quest tabs) ---------- */
 .portfolio-menu-item,
 .quest-item {
   background: none;
@@ -53,7 +81,13 @@
 }
 
 .portfolio-menu-item:focus-visible,
-.quest-item:focus-visible {
+.quest-item:focus-visible,
+.panel a:focus-visible {
   outline: 2px solid white;
   outline-offset: 4px;
+}
+
+.active-link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }

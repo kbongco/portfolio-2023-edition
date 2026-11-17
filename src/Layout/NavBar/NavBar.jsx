@@ -17,7 +17,7 @@ export default function NavBar({ onNavItemClick }) {
 
   return (
     <nav
-      className={`portfolio-nav ${
+      className={`portfolio-nav panel ${
         theme === "videoGame" ? "video-game-theme" : "professional-theme"
       }`}
     >

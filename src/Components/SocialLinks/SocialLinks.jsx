@@ -8,7 +8,7 @@ export default function SocialLinks() {
   const { social } = useCopy();
 
   return (
-    <section className="social-links-portfolio">
+    <section className="social-links-portfolio panel">
       <h1 className="social-header">{social.heading}</h1>
       <p className="contact-text">{social.text}</p>
       <div className="social-links-icon-container">

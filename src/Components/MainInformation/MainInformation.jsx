@@ -9,7 +9,7 @@ export default function MainInformation() {
   const { stats } = useCopy();
 
   return (
-    <section className="main-information-portfolio">
+    <section className="main-information-portfolio panel">
       <h1 className="main-information-header">{stats.heading}</h1>
       <div className="main-information-container">
         {stats.levels?.map((level) => (

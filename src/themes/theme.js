@@ -1,36 +1,36 @@
 import { extendTheme } from "@chakra-ui/react";
 
+// Headings grow smoothly with the screen width instead of jumping at a
+// breakpoint: clamp(smallest, preferred, largest).
 const customTheme = extendTheme({
   styles: {
     global: {
-      // styles for the `body`
       body: {
-        bg: "#807F7F", // Use any color here
+        bg: "#807F7F",
         color: "white",
         fontFamily: "Playfair Display, serif",
       },
       h1: {
         fontFamily: "Playfair Display, serif",
         color: "white",
-        fontSize: "2xl",
+        fontSize: "clamp(1.4rem, 1.15rem + 1vw, 1.875rem)",
         fontWeight: "bold",
-        // Add other custom styles as needed for h1
+        lineHeight: 1.25,
       },
       h2: {
         fontFamily: "Playfair Display, serif",
         color: "white",
-        fontSize: "xl",
+        fontSize: "clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem)",
         fontWeight: "bold",
-        // Add other custom styles as needed for h2
+        lineHeight: 1.3,
       },
       h3: {
         fontFamily: "Playfair Display, serif",
         color: "white",
-        fontSize: "lg",
+        fontSize: "clamp(1.05rem, 1rem + 0.3vw, 1.25rem)",
         fontWeight: "bold",
-        // Add other custom styles as needed for h3
+        lineHeight: 1.3,
       },
-      // Add styles for other heading levels as needed
     },
   },
 });

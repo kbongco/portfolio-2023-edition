@@ -5,7 +5,7 @@ export default function About() {
   const { about } = sharedCopy;
 
   return (
-    <section className="about-portfolio-section">
+    <section className="about-portfolio-section panel">
       <div className="about-portfolio-container">
         <div className="about-portfolio-img-container">
           <img

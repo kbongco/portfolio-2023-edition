@@ -1,54 +1,44 @@
-.main-information-portfolio {
-  width: 85%;
-  margin-top: 16px;
-  height: auto;
-  background-color: #03083a;
-  border: 5px solid white;
-  border-radius: 10px;
-  color: white;
+.progress-level-container {
+  max-width: 40rem;
+  margin-top: 0.75rem;
+}
+
+.next-level {
+  text-align: right;
+}
+
+.special-abilities-container,
+.hobbies-and-fun-container,
+.currently-equipped-container {
+  margin-top: 1.5rem;
 }
 
 .hobbies {
   list-style: none;
+  padding: 0;
 }
 
-.currently-equipped-icons {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.main-information-header {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-}
-
-.years-of-experience-container {
-  margin-left: 0.5rem;
-}
-
-.years-of-exp {
-  padding-right: 0.5rem;
-}
-
-.special-abilities-text,
-.learn-more-text {
+.hobbies li {
+  position: relative;
+  padding-left: 1.25rem;
   max-width: 70ch;
 }
 
-@media screen and (min-width: 768px) {
-  .main-information-portfolio {
-    height: auto;
-  }
+.hobbies li + li {
+  margin-top: 0.4rem;
+}
+
+.hobbies li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 0.75em;
 }
 
 .currently-equipped-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 1.1rem;
-}
-
-.special-abilities-container,
-.hobbies-and-fun-container,
-.currently-equipped-container {
-  padding: 0.5rem;
+  margin-top: 0.75rem;
 }

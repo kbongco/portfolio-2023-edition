@@ -1,61 +1,26 @@
 .portfolio-nav {
-  height: 72px;
-  width: 85%;
-  margin-top: 16px;
-  background-color: #03083a;
-  border: 5px solid white;
-  border-radius: 10px;
-  color: white;
-  color: white;
   display: flex;
-  justify-content: space-between;
-}
-
-.portfolio-links-container {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 0.5rem;
-}
-
-.portfolio-menu-item {
-  margin-right: 0.5rem;
-}
-
-.portfolio-menu-item:hover {
-  cursor: pointer;
-}
-
-.portfolio-nav {
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-block: 0.75rem;
+  font-size: clamp(1rem, 0.75rem + 1.25vw, 1.75rem);
 }
 
 .switch-container {
   display: flex;
   gap: 0.5rem;
-  margin-left: 0.5rem;
   align-items: center;
 }
 
-.active-link {
-  text-decoration: underline;
+.portfolio-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 clamp(0.75rem, 0.25rem + 2vw, 1.75rem);
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio-nav {
-    font-size: 2rem;
-  }
-
-  .left-column-desktop {
-    width: 55%;
-  }
-
-  .portfolio-links-container {
-    gap: 1.5rem;
-  }
-
-  .portfolio-nav {
-    width: auto;
-    margin-left: 0.5rem;
-  }
+/* Taller hit area for fingers without changing the visual spacing. */
+.portfolio-menu-item {
+  padding-block: 0.4rem;
 }

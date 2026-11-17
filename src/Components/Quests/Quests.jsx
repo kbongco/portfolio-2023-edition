@@ -56,9 +56,9 @@ export default function Quests() {
   const activeCopy = quests[activeContent];
 
   return (
-    <div className="quests-information">
-      <h1 className="quests-header">{activeCopy.heading}</h1>
-      <div className="sideproject-switch">
+    <section className="quests-information panel">
+      <div className="quests-top">
+        <h1 className="quests-header">{activeCopy.heading}</h1>
         <ul className="quest-list">
           {tabs.map((t, i) => (
             <Fragment key={t.id}>
@@ -85,6 +85,6 @@ export default function Quests() {
       <div className="learn-more">
         <p className="check-out-linked-in">{activeCopy.footer}</p>
       </div>
-    </div>
+    </section>
   );
 }
