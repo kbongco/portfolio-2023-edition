@@ -14,7 +14,11 @@ function QuestEntry({ entry }) {
     <>
       <div className="quests-information-container">
         <div className="quests-picture">
-          <img className="quest-company" src={entry.image} alt={entry.imageAlt} />
+          <img
+            className="quest-company"
+            src={entry.image}
+            alt={entry.imageAlt}
+          />
           <div className="quests-text">
             <h3>{entry.title}</h3>
             {entry.dates && <p>{entry.dates}</p>}
@@ -24,7 +28,11 @@ function QuestEntry({ entry }) {
                   <Fragment key={link.label}>
                     {i > 0 && <li aria-hidden="true">|</li>}
                     <li>
-                      {link.url ? <a href={link.url}>{link.label}</a> : link.label}
+                      {link.url ? (
+                        <a href={link.url}>{link.label}</a>
+                      ) : (
+                        link.label
+                      )}
                     </li>
                   </Fragment>
                 ))}
@@ -55,13 +63,17 @@ export default function Quests() {
           {tabs.map((t, i) => (
             <Fragment key={t.id}>
               {i > 0 && <li aria-hidden="true">|</li>}
-              <li
-                className={`quest-item ${
-                  activeContent === t.id ? "active-link" : ""
-                }`}
-                onClick={() => setActiveContent(t.id)}
-              >
-                {quests[t.id].tab}
+              <li>
+                <button
+                  type="button"
+                  className={`quest-item ${
+                    activeContent === t.id ? "active-link" : ""
+                  }`}
+                  aria-pressed={activeContent === t.id}
+                  onClick={() => setActiveContent(t.id)}
+                >
+                  {quests[t.id].tab}
+                </button>
               </li>
             </Fragment>
           ))}

@@ -23,20 +23,27 @@ export default function NavBar({ onNavItemClick }) {
     >
       <div className="switch-container">
         <FontAwesomeIcon icon={faGamepad} />
-        <Switch size="md" className="navbar-switch" onChange={toggleTheme} />
+        <Switch
+          size="md"
+          className="navbar-switch"
+          aria-label="Switch between video game and professional view"
+          onChange={toggleTheme}
+        />
         <FontAwesomeIcon icon={faUserTie} />
       </div>
       <div className="portfolio-links-container">
         {nav.map((link) => (
-          <a
+          <button
+            type="button"
             key={link.id}
             className={`portfolio-menu-item ${
               activeNavItem === link.id ? "active-link" : ""
             }`}
+            aria-current={activeNavItem === link.id ? "page" : undefined}
             onClick={() => handleNavItemClick(link.id)}
           >
             {link.label}
-          </a>
+          </button>
         ))}
       </div>
     </nav>

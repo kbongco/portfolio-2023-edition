@@ -18,21 +18,21 @@ function App() {
   };
   return (
     <ThemeProvider>
-    <ChakraProvider theme={customTheme}>
-      <div className="App">
-        <NavBar onNavItemClick={selectedLink} />
-        <div className="information-overall">
-          <div className="left-column-desktop">
-            <About />
-            <SocialLinks />
+      <ChakraProvider theme={customTheme}>
+        <div className="App">
+          <NavBar onNavItemClick={selectedLink} />
+          <div className="information-overall">
+            <div className="left-column-desktop">
+              <About />
+              <SocialLinks />
+            </div>
+            {showComponent === "MainInformation" && <MainInformation />}
+            {showComponent === "Quests" && <Quests />}
+            {showComponent === "Inventory" && <KeyItems />}
           </div>
-          {showComponent === "MainInformation" && <MainInformation />}
-          {showComponent === "Quests" && <Quests />}
-          {showComponent === "Inventory" && <KeyItems />}
         </div>
-      </div>
       </ChakraProvider>
-      </ThemeProvider>
+    </ThemeProvider>
   );
 }
 

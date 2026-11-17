@@ -2,7 +2,7 @@
   width: 85%;
   margin-top: 16px;
   height: auto;
-  background-color: #03083A;
+  background-color: #03083a;
   border: 5px solid white;
   border-radius: 10px;
   color: white;
@@ -30,25 +30,25 @@
   padding-right: 0.5rem;
 }
 
-.special-abilities-text, .learn-more-text {
+.special-abilities-text,
+.learn-more-text {
   max-width: 70ch;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .main-information-portfolio {
     height: auto;
   }
-  
 }
 
 .currently-equipped-icons {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 1.1rem;
 }
 
-.special-abilities-container, .hobbies-and-fun-container, .currently-equipped-container {
+.special-abilities-container,
+.hobbies-and-fun-container,
+.currently-equipped-container {
   padding: 0.5rem;
 }

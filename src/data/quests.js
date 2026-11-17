@@ -27,7 +27,8 @@ export const jobs = [
     imageAlt: "General Assembly logo",
     description:
       "Attended a 12 week immersive bootcamp, learning full stack web development with Javascript. Created several projects, including an Etsy clone themed to Animal Crossing as well as a project collaborating with the UX cohort.",
-    skills: "HTML, CSS, Javascript, React, Ruby, Rails, Express.js, MongoDB, SQL",
+    skills:
+      "HTML, CSS, Javascript, React, Ruby, Rails, Express.js, MongoDB, SQL",
   },
 ];
 

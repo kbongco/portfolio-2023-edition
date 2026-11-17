@@ -2,19 +2,18 @@
   height: 72px;
   width: 85%;
   margin-top: 16px;
-  background-color: #03083A;
+  background-color: #03083a;
   border: 5px solid white;
   border-radius: 10px;
   color: white;
   color: white;
   display: flex;
   justify-content: space-between;
-
 }
 
 .portfolio-links-container {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 0.5rem;
 }
 
@@ -27,8 +26,8 @@
 }
 
 .portfolio-nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .switch-container {
@@ -42,7 +41,7 @@
   text-decoration: underline;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .portfolio-nav {
     font-size: 2rem;
   }
@@ -59,5 +58,4 @@
     width: auto;
     margin-left: 0.5rem;
   }
-
 }
