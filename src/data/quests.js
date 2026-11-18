@@ -1,7 +1,22 @@
-// Work experience ("Quests") and side projects ("Side Quests").
-// A link without a `url` is shown as plain text (e.g. "Coming Soon!").
-
 export const jobs = [
+  {
+    title: "Front End Developer (Contract) ",
+    dates: "January 2026 - March 2026",
+    image: "https://i.ibb.co/8DWmf1Bm/NWG-logo.png",
+    imageAlt: "NWG logo",
+    description:
+      "Worked as a contract front end developer, helped maintained 100s of client sites built on PHP and Next.js ",
+    skills: "Next.js, PHP, WordPress, HTML, CSS ",
+  },
+  {
+    title: "Cargiving",
+    dates: "March 2023 - December 2025",
+    image: "https://i.ibb.co/1tx1F8y6/caregiving.png",
+    imageAlt: "Caregiving logo",
+    description:
+      "Caregave for an ailing family member, while continuing to improve coding and design skills",
+    skills: "",
+  },
   {
     title: "UX Engineer @ EY Design Studio",
     dates: "February 2022 - March 2023",
@@ -33,6 +48,48 @@ export const jobs = [
 ];
 
 export const sideProjects = [
+    {
+    title: "60 Seconds to Decide: Designing a Real-Time Decision Tool for Powerlifting Coaches",
+    image:
+      "https://i.ibb.co/S71tTqSF/figmadesign.png",
+    imageAlt: "Figma Design of app",
+    links: [
+      {
+        label: "Medium Case Study",
+        url: "https://the-lifting-developer.medium.com/60-seconds-to-decide-designing-a-real-time-decision-tool-for-powerlifting-coaches-46cfc2acee63",
+      },
+      {
+        label: "Figma",
+        url: "https://www.figma.com/make/CnwbO4p2z7eMa7aSf9155h/Deadlift-Calculator-App?t=lividpYHrlQSJgWa-1",
+      },
+    ],
+    description:
+      "A UX case study on reducing cognitive load during high-stakes deadlift attempt selection.",
+    skills: "UX Design, Prototyping, UX Research",
+  },
+  {
+    title: "ClearBench: A light-weight LIMS",
+    image:
+      "https://i.ibb.co/7tSV3rYc/Screen-Shot-2026-10-12-at-11-38-05-AM.png",
+    imageAlt: "Clear Bench",
+    links: [
+      {
+        label: "Github",
+        url: "https://github.com/kbongco/clear-bench",
+      },
+      {
+        label: "Figma",
+        url: "https://www.figma.com/design/vtcrSI7QOkmbitexzF42qO/Chibi-Components?node-id=0-1&t=z4PV1kWsPBY4TGyI-1",
+      },
+      {
+        label: "Live Site",
+        url: "https://clear-bench.vercel.app/",
+      },
+    ],
+    description:
+      "A project inspired from my days of working in the lab. A sample management system that food and cosmetics labs can use to track samples going in and out of the lab as a better way for accountability and tracking instead of excel sheets.",
+    skills: "React, Figma, Typescript, FastApi, Python, CICD, ViTest, ClaudeCode, PyTest, PostgresQL",
+  },
   {
     title: "Chibi Components: A minimal Library",
     image:
